@@ -11,17 +11,19 @@
 
 
 
-<!--- Orange header --->
+<!--- GetSmart header --->
       	<div class="header">
   		<h1>GetSmart</h1>
   		<p>Slogan Placeholder</p>
 	</div>
 
 
+
 <!--- navbar --->
-	<div id="navbar">
-  		<a href="Home.html">Home</a>	
-  		<div class="dropdown">
+	<div class="topnav">
+  		<a href="Home.html">Home</a>
+  		
+		<div class="dropdown">
     			<button class="dropbtn">Buy 
       				<i class="fa fa-caret-down"></i>
     			</button>
@@ -32,15 +34,39 @@
     				<a href="Electronics.html">Electronics</a>
     			</div>
   		</div> 
+
   		<a href="Sell.html">Sell</a>
-		<a href="Activity.html">Activity</a>
+  		<a href="Activity.html">Activity</a>
+
+		<div class="search-container">
+    			<form action="/action_page.php">
+      				<input type="text" placeholder="Search.." name="search">
+      				<button type="submit">Submit</button>
+    			</form>
+  		</div>
 	</div>
 
 
 
 
+<!--- side bar --->
+	<div id="mySidebar" class="sidebar">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      			<a href="Tutors.html">Tutors</a>
+      			<a href="Books.html">Books</a>
+     			<a href="Materials.html">Study Materials</a>
+    			<a href="Electronics.html">Electronics</a>
+		</div>
+
+		<div id="main">
+  			<button class="openbtn" onclick="openNav()">☰ Buy A Different Product</button>  
+		</div>
+
+
+
+
 <!--- table --->
-	<h2>Tutors Available</h2>
+	<h2>Study Materials Available</h2>
 
 	<input type="text" id="myInput" onkeyup="tableFunction()" placeholder="Search for your subject to be tutored in.." title="Type in a name">
 
@@ -108,6 +134,16 @@
       			}
     		     	}       
   		    }
+		}
+
+		function openNav() {
+  			document.getElementById("mySidebar").style.width = "250px";
+  			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidebar").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
 		}
 	</script>
         </main>

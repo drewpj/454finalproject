@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <title>GetSmart</title>
         <link rel="stylesheet" href="stylesheet.css">
+	<script> src="header.js"</script>
+	<script> src="tables.js" src="iCloud Drive/Documents/07 Senior Spring/CIS454 - SoftwareImplementation/Project2/tables.js"</script>
       </head>
-
 
 
 
@@ -20,8 +21,9 @@
 
 <!--- navbar --->
 	<div class="topnav">
-  		<a class="active" href="Home.html">Home</a>
-  		<div class="dropdown">
+  		<a href="Home.html">Home</a>
+  		
+		<div class="dropdown">
     			<button class="dropbtn">Buy 
       				<i class="fa fa-caret-down"></i>
     			</button>
@@ -32,9 +34,11 @@
     				<a href="Electronics.html">Electronics</a>
     			</div>
   		</div> 
-  		<a href="Sell.html">Sell</a>
-  		<a href="Activity.html">Activity</a>
-  			<div class="search-container">
+  		
+		<a href="Sell.html">Sell</a>
+  		<a class="active" href="Activity.html">Activity</a>
+  			
+		<div class="search-container">
     			<form action="/action_page.php">
       				<input type="text" placeholder="Search.." name="search">
       				<button type="submit">Submit</button>
@@ -45,40 +49,16 @@
 
 
 
-<!--- Home page content --->
-	<div class="content">
-  		<h3>Home Page Text</h3>
-  		<p>Needs to be written.</p>
-	</div>
-
-
-  
-
-
-
-
-<!---- About Us PopUp --->
-	<div class="callout">
-  		<div class="callout-header">About Us</div>
-  			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  			<div class="callout-container">
-
-<!--- What is in the PopUp --->
-   			<p>About Us ... needs to be written :) </p>
-  		</div>
-	</div>
 
 
 
 
 
+            
 
 
 
-
-
-
-     	    <script>
+	<script>
 		window.onscroll = function() {headerFunction()};
 
 		var navbar = document.getElementById("navbar");
@@ -91,7 +71,8 @@
     		      navbar.classList.remove("sticky");
   		   }
 		}
-      	   </script>
+	</script>
+
 
         </main>
       </body>

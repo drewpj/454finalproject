@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, "Lato", sans-serif;
 }
 
 
@@ -16,40 +16,69 @@ body {
 
 
 
-/*navbar*/
-#navbar {
+
+/* topnav */
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
   overflow: hidden;
   background-color: darkorange;
 }
 
-#navbar a {
+.topnav a {
   float: left;
-  font-size: 16px;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-#navbar a:hover {
+.topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #56A5EC;
+.topnav a.active {
+  background-color: #2196F3;
   color: white;
 }
 
-.content {
-  padding: 18px;
+.topnav .search-container {
+  float: right;
 }
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+
+
 
 
 /*dropdown in navbar */
@@ -62,7 +91,7 @@ body {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -98,6 +127,10 @@ body {
 
 
 
+
+
+
+
 /* make sure navbar stays at top */
 .sticky {
   position: fixed;
@@ -108,6 +141,9 @@ body {
 .sticky + .content {
   padding-top: 30px;
 }
+
+
+
 
 
 
@@ -157,6 +193,71 @@ body {
 
 
 
+
+/* sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 4px 4px 4px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.openbtn {
+  font-size: 10px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+
 /* filter table */
 * {
   box-sizing: border-box;
@@ -192,6 +293,78 @@ body {
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+
+
+
+
+
+
+/* Sell Form */
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 700px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
 
 
 
