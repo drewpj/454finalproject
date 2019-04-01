@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <title>GetSmart</title>
         <link rel="stylesheet" href="stylesheet.css">
-	<script type="text/javascript" src="header.js"></script>
       </head>
+
+
+
 
 
 <!--- Orange header --->
@@ -55,10 +57,29 @@
 	</div>
 
 
-            
 
 
 
+
+
+
+
+
+
+     	    <script>
+		window.onscroll = function() {headerFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function headerFunction() {
+  		   if (window.pageYOffset >= sticky) {
+    		      navbar.classList.add("sticky")
+  		   } else {
+    		      navbar.classList.remove("sticky");
+  		   }
+		}
+      	   </script>
 
         </main>
       </body>
