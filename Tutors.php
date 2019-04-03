@@ -75,11 +75,15 @@
     			<th style="width:20%;">Service</th>
     			<th style="width:20%;">Price</th>
     			<th style="width:60%;">Brief Description</th>
-  		</tr>
+  			<th style="width:60%;">Buy</th>
+		</tr>
+		<form action="/buy.php" method="get" id="form1">
+		</form>
 		<tr>
   			<td>English</td>
     			<td>$7.00</td>
 			<td>These will be inputted by our database</td>
+			<td><button type="submit" form="form1" value="Buy">Buy</button></td>
   		</tr>
   		<tr>
     			<td>ComSci</td>
