@@ -72,27 +72,42 @@
   		<tr class="header">
     			<th style="width:20%;">Service</th>
     			<th style="width:20%;">Price</th>
-    			<th style="width:60%;">Brief Description</th>
+    			<th style="width:50%;">Brief Description</th>
+			<th> <style="width:10%;">Purchase?</th>
   		</tr>
 		<tr>
   			<td>How to pass 454</td>
     			<td>$0.01</td>
 			<td>These will be inputted by our database</td>
+			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
   		</tr>
   		<tr>
     			<td>ComSci</td>
     			<td>Needs to be default money</td>
 			<td>I hope this is okay to work with</td>
-
+			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
   		</tr>
   		<tr>
     			<td>Nat is awesome</td>
     			<td>priceless</td>
 			<td>you're welcome</td>
-
+			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
   		</tr>
 	</table>
 
+
+
+<!--- Add to cart button --->
+	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
+
+	<div class="form-popup" id="myForm">
+  	   <form action="/action_page.php" class="form-container">
+    		<h2>Next Step?</h2>
+
+    		<button type="submit" class="btn">Continue To Shopping Cart</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
+ 	   </form>
+	</div>
 
 
 
@@ -142,6 +157,30 @@
 		function closeNav() {
   			document.getElementById("mySidebar").style.width = "0";
   			document.getElementById("main").style.marginLeft= "0";
+		}
+
+		function CheckBoxFunction() {
+  			// Get the checkbox
+  			var checkBox = document.getElementById("myCheck");
+  			// Get the output text
+  			var text = document.getElementById("text");
+
+  			// If the checkbox is checked, display the output text
+  			if (checkBox.checked == true){
+  			  text.style.display = "block";
+  			} else {
+  			  text.style.display = "none";
+  			}
+		}
+
+
+
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
 		}
 	</script>
 
