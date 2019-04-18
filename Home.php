@@ -64,7 +64,8 @@
   			<div class="callout-container">
 
 <!--- What is in the PopUp --->
-   			<p>About Us ... needs to be written :) </p>
+   			<p>The Next Big Thing.</p>
+  			<img src="face.png" alt="Mark" class="right">
   		</div>
 	</div>
 
