@@ -130,7 +130,8 @@
 		html += "<td>$99</td>";
 		html += "<td>this are good, yes</td>";
 		html += "<td><input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>"; 
-		document.getElementById("table").innerHTML = html;
+		//document.getElementById("table").innerHTML = html;
+		document.getElementById("myTable").innerHTML.append(html);
 
 		window.onscroll = function() {headerFunction()};
 
