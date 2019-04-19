@@ -95,6 +95,11 @@
 			<td>you're welcome</td>
 			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
   		</tr>
+
+		<div id = "table">
+
+		</div>			
+			
 	</table>
 
 
@@ -120,6 +125,13 @@
 
 
 	<script>
+		var html = "<tr>";
+		html += "<td>New phone who dis</td>";
+		html += "<td>$99</td>";
+		html += "<td>this are good, yes</td>";
+		html += "<td><input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>"; 
+		document.getElementById("table").innerHTML = html;
+
 		window.onscroll = function() {headerFunction()};
 
 		var navbar = document.getElementById("navbar");
