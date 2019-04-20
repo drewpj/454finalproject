@@ -15,6 +15,7 @@ function display() {
   alert("The value of the checkbox is: " + x);
 }
 
+msg();
 
 /*
 function msg(){
