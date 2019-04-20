@@ -4,7 +4,7 @@ function msg(){
 
 alert("Im just running here");
 
-function checBoxFunction(){
+function cbf(){
 	alert("checkBixFunction");
 
 }
