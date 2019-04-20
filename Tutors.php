@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="stylesheet.css">
 	<script> src="header.js"</script>
 	<script> src="tables.js" src="iCloud Drive/Documents/07 Senior Spring/CIS454 - SoftwareImplementation/Project2/tables.js"</script>
-      </head>
+      	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
 
 
 
@@ -140,7 +141,7 @@
 
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
-
+		/*
 		function ChecBoxFunction(){
 			var theUrl = "http://3.84.60.56/Request.php?req=68";
 			var xmlHttp = new XMLHttpRequest();
@@ -153,6 +154,12 @@
 			xmlHttp.open( "GET", theUrl, true );
 			xmlHttp.send( null );
 		}
+		*/
+		function checBoxFunction(){
+
+		$(function() { alert('hello This is a checkbox') });
+		}
+		$(function() { alert('hello This is jquery') });
 
 		function headerFunction() {
   		   if (window.pageYOffset >= sticky) {
