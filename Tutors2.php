@@ -74,48 +74,42 @@
   		<tr class="header">
     			<th style="width:20%;">Service</th>
     			<th style="width:20%;">Price</th>
-    			<th style="width:50%;">Brief Description</th>
-			<th style="width:10%;">Purchase?</th>
-  		</tr>
+    			<th style="width:60%;">Brief Description</th>
+  			<th style="width:60%;">Buy</th>
+		</tr>
+		<form action="/buy.php" method="get" id="form1">
+		</form>
 		<tr>
   			<td>English</td>
     			<td>$7.00</td>
 			<td>These will be inputted by our database</td>
-			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
+			<td><button type="submit" form="form1" value="Buy">Buy</button></td>
   		</tr>
   		<tr>
     			<td>ComSci</td>
     			<td>Needs to be default money</td>
 			<td>I hope this is okay to work with</td>
-			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
+
   		</tr>
   		<tr>
     			<td>Nat is awesome</td>
     			<td>priceless</td>
 			<td>you're welcome</td>
-			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
+
   		</tr>
+		<?php
+			for($i = 0; $i < 5; $i++){
+				$sql = "sql statement";
+				echo "<tr>";
+				echo "<td> FakeMajor </td>";
+				echo "<td> $6.67 </td>";
+				echo "<td> A very good description </td>";
+				echo "</tr>";
+			}
+		?>
 
-		<div id = "table">
-
-		</div>			
 			
 	</table>
-
-
-
-
-<!--- Add to cart button --->
-	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
-
-	<div class="form-popup" id="myForm">
-  	   <form action="/cart.php" class="form-container">
-    		<h2>Next Step?</h2>
-
-    		<button type="submit" class="btn">Continue To Shopping Cart</button>
-    		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
- 	   </form>
-	</div>
 
 
 
@@ -125,14 +119,6 @@
 
 
 	<script>
-		var html = "<tr>";
-		html += "<td>New phone who dis</td>";
-		html += "<td>$99</td>";
-		html += "<td>this are good, yes</td>";
-		html += "<td><input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>"; 
-		//document.getElementById("table").innerHTML = html;
-		document.getElementById("myTable").innerHTML.append(html);
-
 		window.onscroll = function() {headerFunction()};
 
 		var navbar = document.getElementById("navbar");
@@ -174,15 +160,6 @@
 		function closeNav() {
   			document.getElementById("mySidebar").style.width = "0";
   			document.getElementById("main").style.marginLeft= "0";
-		}
-
-
-		function openForm() {
-		  document.getElementById("myForm").style.display = "block";
-		}
-
-		function closeForm() {
-		  document.getElementById("myForm").style.display = "none";
 		}
 	</script>
         </main>
