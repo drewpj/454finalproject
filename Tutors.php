@@ -141,7 +141,7 @@
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
 
-		function CheckBoxFunction(){
+		function ChecBoxFunction(){
 			var theUrl = "http://3.84.60.56/Request.php?req=68";
 			var xmlHttp = new XMLHttpRequest();
 
