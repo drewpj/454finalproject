@@ -7,6 +7,7 @@
 	<script> src="header.js"</script>
 	<script> src="tables.js" src="iCloud Drive/Documents/07 Senior Spring/CIS454 - SoftwareImplementation/Project2/tables.js"</script>
       	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/addCart.js"></script> 
 	</head>
 
 
