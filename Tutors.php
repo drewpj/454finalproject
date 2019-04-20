@@ -144,7 +144,13 @@
 		function CheckBoxFunction(){
 			var theUrl = "http://3.84.60.56/Request.php?req=68";
 			var xmlHttp = new XMLHttpRequest();
-			xmlHttp.open( "GET", theUrl, false );
+
+			xmlHttp.onreadystatechange = function() { 
+        		if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            			callback(xmlHttp.responseText);
+    			}
+
+			xmlHttp.open( "GET", theUrl, true );
 			xmlHttp.send( null );
 		}
 
