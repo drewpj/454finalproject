@@ -141,26 +141,14 @@
 
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
-		/*
-		function ChecBoxFunction(){
-			var theUrl = "http://3.84.60.56/Request.php?req=68";
-			var xmlHttp = new XMLHttpRequest();
-
-			xmlHttp.onreadystatechange = function() { 
-        		if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            			callback(xmlHttp.responseText);
-    			}
-
-			xmlHttp.open( "GET", theUrl, true );
-			xmlHttp.send( null );
-		}
-		*/
+		
 		function checBoxFunction(){
 
-		$(function() { alert('hello This is a checkbox') });
+			alert("Hello! I am an alert box!!");
+		
 		}
 		$(function() { alert('hello This is jquery') });
-
+		alert("Hello! I am running a script");
 		function headerFunction() {
   		   if (window.pageYOffset >= sticky) {
     		      navbar.classList.add("sticky")
