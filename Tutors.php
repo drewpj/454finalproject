@@ -83,13 +83,13 @@
   			<td>English</td>
     			<td>$7.00</td>
 			<td>These will be inputted by our database</td>
-			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
+			<td> <input type="checkbox" id="myCheck" onclick="cbf()"> </td>
   		</tr>
   		<tr>
     			<td>ComSci</td>
     			<td>Needs to be default money</td>
 			<td>I hope this is okay to work with</td>
-			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
+			<td> <input type="checkbox" id="myCheck" onclick="cbf()"> </td>
   		</tr>
   		<tr>
     			<td>Nat is awesome</td>
@@ -101,10 +101,6 @@
 		<?php
 			include 'TutorsTable.php';
 		?>
-		<div id = "table">
-
-		</div>			
-			
 	</table>
 
 

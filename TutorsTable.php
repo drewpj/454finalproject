@@ -6,7 +6,7 @@
 				echo "<td> FakeMajor </td>";
 				echo "<td> $6.67 </td>";
 				echo "<td> A very good description </td>";
-				echo "<td> <input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>";
+				echo "<td> <input type=\"checkbox\" id=\"myCheck\" onclick=\"msg()\"> </td>";
 				echo "</tr>";
 			}
 
