@@ -96,6 +96,9 @@
 			<td> <input type="checkbox" id="myCheck" onclick="ChecBoxFunction()"> </td>
   		</tr>
 
+		<?php
+			include 'TutorsTable.php';
+		?>
 		<div id = "table">
 
 		</div>			
