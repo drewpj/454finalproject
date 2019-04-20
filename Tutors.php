@@ -128,18 +128,25 @@
 
 
 	<script>
-		var html = "<tr>";
-		html += "<td>New phone who dis</td>";
-		html += "<td>$99</td>";
-		html += "<td>this are good, yes</td>";
-		html += "<td><input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>"; 
+		//var html = "<tr>";
+		//html += "<td>New phone who dis</td>";
+		//html += "<td>$99</td>";
+		//html += "<td>this are good, yes</td>";
+		//html += "<td><input type=\"checkbox\" id=\"myCheck\" onclick=\"ChecBoxFunction()\"> </td>"; 
 		//document.getElementById("table").innerHTML = html;
-		document.getElementById("myTable").innerHTML.append(html);
+		//document.getElementById("myTable").innerHTML.append(html);
 
 		window.onscroll = function() {headerFunction()};
 
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
+
+		function CheckBoxFunction(){
+			var theUrl = "http://3.84.60.56/Request.php?req=68";
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", theUrl, false );
+			xmlHttp.send( null );
+		}
 
 		function headerFunction() {
   		   if (window.pageYOffset >= sticky) {
