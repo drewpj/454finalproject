@@ -27,7 +27,15 @@ function msg(){
     		}
 	});
 */
-	$.post( "Request.php", { name: "John", time: "2pm" } );
+	$.post( "../Request.php", { name: "John", time: "2pm" }, {
+		
+			function(data,status){
+				console.log("good call");
+
+			)}.fail(function(err,status){
+				console.log("bad");
+
+	} );
 	alert("after the ajax call");
 }  
 
