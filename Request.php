@@ -1,7 +1,7 @@
 <?php
 
 echo "This is in request";
-
+print_r($_POST);
 print_r($_GET);
 $myfile = fopen("newFile.txt","w");
 $myFile2 = fopen("/home/ubuntu/newFile.txt","w");
