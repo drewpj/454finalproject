@@ -17,7 +17,8 @@ function msg(){
                   	}
             	}
 });*/
-	$.ajax({
+	alert("before the ajaxcall");
+	jQuery.ajax({
 		 data: 'name=' + "myname",
  		url: '../Request.php',
     		method: 'POST', // or GET
