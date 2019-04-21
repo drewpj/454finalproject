@@ -110,7 +110,7 @@
 	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
 
 	<div class="form-popup" id="myForm">
-  	   <form action="/goToCart.php" class="form-container">
+  	   <form action="/Checkout.php" class="form-container">
     		<h2>Next Step?</h2>
 
     		<button type="submit" class="btn">Continue To Shopping Cart</button>
