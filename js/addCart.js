@@ -18,7 +18,7 @@ function msg(){
             	}
 });*/
 	alert("before the ajaxcall");
-/*	jQuery.ajax({
+	jQuery.ajax({
 		 data: 'name=' + "myname",
  		url: '../Request.php',
     		method: 'POST', // or GET
@@ -26,7 +26,7 @@ function msg(){
        			alert("alert in the ajax");
     		}
 	});
-*/
+
 	alert("alert2");
 }  
 
