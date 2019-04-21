@@ -32,7 +32,7 @@ function msg(){
 			function(data,status){
 				console.log("good call");
 
-			)}.fail(function(err,status){
+			}).fail(function(err,status){
 				console.log("bad");
 
 	} );
