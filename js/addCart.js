@@ -1,7 +1,7 @@
 function msg(){  
 // alert("Hello Javatpoint");  
-	var x = document.getElementById("myCheck3").value;
-  	alert("The value of the checkbox is: " + x);
+	//var x = document.getElementById("myCheck3").value;
+  	//alert("The value of the checkbox is: " + x);
 	alert("alert2");
 	display();
 }  
