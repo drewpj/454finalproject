@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="stylesheet.css">
 	<script> src="header.js"</script>
 	<script> src="tables.js" src="iCloud Drive/Documents/07 Senior Spring/CIS454 - SoftwareImplementation/Project2/tables.js"</script>
+      	<script type="text/javascript" src="js/checkout.js"></script> 
       </head>
 
 
