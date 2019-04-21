@@ -20,7 +20,7 @@ function msg(){
 	alert("before the ajaxcall");
 	$.ajax({
 		 data: 'name=' + "myname",
- 		url: '../Request.php',
+ 		url: '../php/updateCart.php',
     		method: 'POST', // or GET
     		success: function(msg) {
        			alert(msg);
