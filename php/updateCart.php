@@ -1,8 +1,9 @@
 <?php
-include_once '../include/db.php';
+//include_once '../include/db.php';
 session_start();
 
 $name = $_POST['name'];
+print("name = " . $name);
 
 if (isset($_SESSION[$name])){
 	if ($_SESSION[$name] == True){
