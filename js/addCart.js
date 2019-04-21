@@ -18,15 +18,16 @@ function msg(){
             	}
 });*/
 	alert("before the ajaxcall");
-/*	jQuery.ajax({
+	$.ajax({
 		 data: 'name=' + "myname",
  		url: '../Request.php',
     		method: 'POST', // or GET
-    		success: function("hello") {
-       			alert("alert in the ajax");
+    		success: function(msg) {
+       			alert(msg);
     		}
 	});
-*/
+
+/*
 	$.post( "../Request.php", { name: "John", time: "2pm" }, {
 		
 			function(data,status){
@@ -36,6 +37,7 @@ function msg(){
 				console.log("bad");
 
 	} );
+*/
 	alert("after the ajax call");
 }  
 
