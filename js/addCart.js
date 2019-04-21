@@ -18,7 +18,7 @@ function msg(){
             	}
 });*/
 	alert("before the ajaxcall");
-	jQuery.ajax({
+/*	jQuery.ajax({
 		 data: 'name=' + "myname",
  		url: '../Request.php',
     		method: 'POST', // or GET
@@ -26,12 +26,13 @@ function msg(){
        			alert("alert in the ajax");
     		}
 	});
-
-	alert("alert2");
+*/
+	$.post( "Request.php", { name: "John", time: "2pm" } );
+	alert("after the ajax call");
 }  
 
 
-alert("Im just running here");
+alert("Im just running here 8:44");
 
 function cbf(){
 	alert("checkBixFunction");
