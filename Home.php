@@ -12,8 +12,8 @@
 
 <!--- GetSmart header --->
       	<div class="header">
-  		<img src="logo.png" alt="logo" class="center">
-  		<p>Slogan Placeholder</p>
+  		<img src="logo.png" alt="Logo" class="center">
+  		<p>College Hacks to Get Smarter</p>
 	</div>
 
 
