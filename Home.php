@@ -65,7 +65,6 @@
 
 <!--- What is in the PopUp --->
    			<p>The Next Big Thing.</p>
-  			<img src="face.png" alt="Mark" class="center">
   		</div>
 	</div>
 
