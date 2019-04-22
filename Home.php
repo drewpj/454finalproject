@@ -12,7 +12,7 @@
 
 <!--- GetSmart header --->
       	<div class="header">
-  		<h1>GetSmart</h1>
+  		<img src="logo.png" alt="logo" class="center">
   		<p>Slogan Placeholder</p>
 	</div>
 
