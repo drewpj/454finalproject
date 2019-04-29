@@ -206,7 +206,9 @@
   			}
 		}
 		
-		function add_item() {
+		function add_item() { 
+			
+		}
 	</script>
 
 
