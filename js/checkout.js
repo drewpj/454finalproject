@@ -14,6 +14,8 @@ function removeItemFromCart(name){
 			alert("error");
 		}
 	});
+	
+	location.reload();
 	/*
 	$.ajax({
 		 data: 'name=' + "myname",
