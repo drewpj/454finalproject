@@ -68,6 +68,8 @@
 				echo "<td> <button onclick=\"removeItemFromCart()\">Remove</button> </td>";
 				echo "</tr>";
 			}
+			
+			include 'php/CheckoutTable.php';
 		?>
 
 
