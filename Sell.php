@@ -91,7 +91,7 @@
 		        <label for="price">Price of Your Product</label>
 		     </div>
  		     <div class="col-75">
- 		       <input type="text" id="price" name="price" placeholder="Price of your product..">
+ 		       <input type="number" id="price" name="price" placeholder="Price of your product..">
  		     </div>
  		   </div>
  
@@ -181,6 +181,32 @@
     		      navbar.classList.remove("sticky");
   		   }
 		}
+		
+		var element = document.getElementById("submit");
+		element.addEventListener("click", reload);
+		var contact = document.getElementById("contact");
+		var full = document.getElementById("full");
+		var location = document.getElementById("location");
+		var brief = document.getElementById("brief");
+		var title = document.getElementById("title");
+		var price = document.getElementById("price");
+		var product = document.getElementById("product");
+		
+		function reload_page() {
+  			if (contact.value && full.value && price.value > 0 && full.value && location.value && brief.value && 
+			   title.value && product.value) {
+    				add_item().then(function(){
+      					window,location.reload_page(); 
+				});
+    				window.alert('Product added successfully');
+  			}
+  			else {
+    				window.alert('Invalid input');
+    				window,location.reload_page();
+  			}
+		}
+		
+		function add_item() {
 	</script>
 
 
