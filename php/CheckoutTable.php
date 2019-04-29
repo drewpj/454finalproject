@@ -5,8 +5,8 @@
 			foreach ($cart as $val){
 				$sql = "sql statement";
 				echo "<tr>";
-				echo "<td> " . $val . " </td>";
-				echo "<td> $99 </td>";
+				echo "<td> " . $val['name'] . " </td>";
+				echo "<td> " . $val['inCart'] . " </td>";
 				echo "<td> <button onclick=\"removeItemFromCart()\">Remove</button> </td>";
 				echo "</tr>";
 			}

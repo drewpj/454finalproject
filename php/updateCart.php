@@ -8,13 +8,15 @@ $name = $_POST['name'];
 print("name = " . $name);
 
 if (isset($_SESSION['cart'][$name])){
-	if ($_SESSION['cart'][$name] == True){
-		$_SESSION['cart'][$name] = False;
+	if ($_SESSION['cart'][$name]['inCart'] == True){
+		$_SESSION['cart'][$name]['inCart'] = False;
 	} else {
-		$_SESSION['cart'][$name] = True;
+		$_SESSION['cart'][$name]['inCart'] = True;
 	}
 } else {
-	$_SESSION['cart'][$name] = True;
+	$_SESSION['cart'][$name] = array();
+	$_SESSION['cart'][$name]['inCart'] = True;
+	$_SESSION['cart'][$name]['name'] = $name;
 }
 
 
