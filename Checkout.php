@@ -60,7 +60,7 @@
   		</tr>
 
 		<?php
-			for($i = 0; $i < 5; $i++){
+			for($i = 0; $i < 1; $i++){
 				$sql = "sql statement";
 				echo "<tr>";
 				echo "<td> Item Name </td>";
