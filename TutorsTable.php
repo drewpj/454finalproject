@@ -10,7 +10,8 @@
 	
 	echo "Any results? have gotten this far";
 	
-	while($row = $result->fetch_assoc()) {
+	//while($row = $result->fetch_assoc()) {
+	while ($row = mysqli_fetch_assoc($result)){
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
 		echo "<td> " . $row["Price"] . " </td>";
