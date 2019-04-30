@@ -1,6 +1,6 @@
 //<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-function msg(name){  
+function msg(name,id){  
 /*
 	jQuery.ajax({
    	 	type: "POST",
@@ -19,7 +19,8 @@ function msg(name){
 });*/
 	alert("before the ajaxcall");
 	$.ajax({
-		 data: 'name=' + name,
+		 //data: 'name=' + name, 'id=' + id,
+		 data: { name: $name, id: $id},//'name=' + name, 'id=' + id,
  		url: '../php/updateCart.php',
     		method: 'POST', // or GET
     		success: function(msg) {

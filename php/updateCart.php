@@ -6,6 +6,7 @@ if ( ! isset($_SESSION['cart']) ) $_SESSION['cart'] = array();
 
 $name = $_POST['name'];
 print("name = " . $name);
+print("id = " . $_POST['id']);
 
 if (isset($_SESSION['cart'][$name])){
 	if ($_SESSION['cart'][$name]['inCart'] == True){
