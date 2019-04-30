@@ -1,7 +1,7 @@
 <?php
 	include_once '../include/db.php';
 	session_start();
-	
+	echo "addUser Running";
 	$name = $_POST['firstName'];
 	$familyname = $_POST['familyName'];
 	$email = $_POST['email1'];
@@ -25,4 +25,5 @@
 		VALUES ('". $name . " " . $familyName ."', '". $id ."', '". $password ."', 10.00, 'User');";
 		
 	$result = sqlsrv_query($conn, $sql); 
+	echo "Add user ran";
 ?>
