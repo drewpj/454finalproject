@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form action="Sell.php">
+		  <form>
 
 		   <div class="row">
  		     <div class="col-25">
