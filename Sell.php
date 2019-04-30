@@ -95,7 +95,15 @@
  		     </div>
  		   </div>
  
-
+		   <div class="row">
+ 		     <div class="col-25">
+		        <label for="price">Your Name</label>
+		     </div>
+ 		     <div class="col-75">
+ 		       <input type="text" id="name" name="name" placeholder="Insert name here...">
+ 		     </div>
+ 		   </div>
+			  
 		   <div class="row">
  		     <div class="col-25">
 		        <label for="brief">Brief Description of Your Product</label>
@@ -191,9 +199,10 @@
 		var title = document.getElementById("title");
 		var price = document.getElementById("price");
 		var product = document.getElementById("product");
+		var name = document.getElementById("name");
 		
 		function reload_page() {
-  			if (contact.value && full.value && price.value > 0 && full.value && location.value && brief.value && 
+  			if (name.value && full.value && price.value > 0 && contact.value && location.value && brief.value && 
 			   title.value && product.value) {
     				add_item().then(function(){
       					window,location.reload_page(); 
@@ -207,7 +216,14 @@
 		}
 		
 		function add_item() { 
-			
+			<?php
+				include_once 'include/db.php';
+	
+				$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
+				VALUES (title, '" . uniqid() . "', '14', price, brief, product, name)";
+				$result = sqlsrv_query($conn, $sql); 
+				echo "done";
+			?>
 		}
 	</script>
 
