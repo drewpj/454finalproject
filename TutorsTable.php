@@ -8,7 +8,7 @@
 	
 	echo "" . $result;
 	
-	echo "have gotten this far";
+	echo "Any results? have gotten this far";
 	/*
 	while($row = $result->fetch_assoc()) {
 		echo "<tr>";
