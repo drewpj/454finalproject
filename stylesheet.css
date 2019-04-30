@@ -546,3 +546,18 @@ span.price {
   float: right;
   color: grey;
 }
+
+
+
+
+/* checkout */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: .middle;
+  width: 33.33%;
+  padding: 10px;
+  height: 800px;
+}
