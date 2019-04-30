@@ -2,7 +2,7 @@
 	include_once 'include/db.php';
 	$sql = "SELECT * from Tutors";
 	$result = $conn->query($sql);
-	echo "". $result;
+	echo "" . $result;
 	echo "have gotten this far";
 	/*
 	while($row = $result->fetch_assoc()) {
