@@ -13,7 +13,8 @@
 	$result = sqlsrv_query($conn, $sql);
 	
 		
-		
+	echo "\nemail = " . $email . " password = " . $password . "\n";
+	echo "sql = " . $sql;
 	if (sqlsrv_has_rows($result)) {
 		echo("Logged in successfully!");
 		//Get row results
