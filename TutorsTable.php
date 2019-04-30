@@ -11,8 +11,8 @@
 	echo "\n11:34 have gotten this far";
 	
 	//while($row = $result->fetch_assoc()) {
-	while ($row = mysqli_fetch_assoc($result)){
-	//while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
+	//while ($row = mysqli_fetch_assoc($result)){
+	while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
 		echo "<td> " . $row["Price"] . " </td>";
