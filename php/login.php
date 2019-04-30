@@ -8,8 +8,8 @@
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	//SQL statement to be queried.
-	$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND PWDCOMPARE('" . $password . "', Password) = 1"; 
-	
+	//$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND PWDCOMPARE('" . $password . "', Password) = 1"; 
+	$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND Password='" . $password . "'"; 
 	$result = sqlsrv_query($conn, $sql);
 	
 		
