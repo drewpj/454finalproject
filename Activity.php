@@ -38,10 +38,6 @@
 		<a href="Sell.html">Sell</a>
   		<a class="active" href="Activity.html">Activity</a>
   			
-		<div class="search-container">
-    			<form action="/action_page.php">
-      				<input type="text" placeholder="Search.." name="search">
-      				<button type="submit">Submit</button>
 		<a href="cart.html">Cart</a>
 		<a href="login.html">Log In</a>
     			</form>
