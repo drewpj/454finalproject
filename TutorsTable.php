@@ -8,7 +8,7 @@
 	
 	//echo "" . $result;
 	
-	echo "\n11:37 have gotten this far";
+	//echo "\n11:37 have gotten this far";
 	
 	//while($row = $result->fetch_assoc()) {
 	//while ($row = mysqli_fetch_assoc($result)){
@@ -18,10 +18,10 @@
 		echo "<td> " . $row["Price"] . " </td>";
 		echo "<td> " . $row["Description"] . " </td>";
 		
-		echo "<td> <input type=\"checkbox\" id= \" " . $id . " \" onclick=\"msg('" . $row["Class"] . "')\" value=1> </td>";
+		echo "<td> <input type=\"checkbox\" id= \" " . $row["id"] . " \" onclick=\"msg('" . $row["Class"] . "')\" value=1> </td>";
 		echo "</tr>";
 	}
-	echo "\nend for loop";
+	//echo "\nend for loop";
 	/*
 	for($i = 0; $i < 5; $i++){
 		$sql = "SELECT * from Tutors;";
