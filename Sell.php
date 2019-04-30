@@ -124,7 +124,15 @@
 
 		<div class="container">
 		  <form action="/action_page.php">
-
+		     
+		    <div class="row">
+ 		     <div class="col-25">
+		        <label for="full">Number of products being sold</label>
+ 		     </div>
+		      <div class="col-75">
+ 		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
+ 		     </div>
+		    </div>
 
 		    <div class="row">
 		      <div class="col-25">
@@ -200,10 +208,11 @@
 		var price = document.getElementById("price");
 		var product = document.getElementById("product");
 		var name = document.getElementById("name");
+		var freq = document.getElementById("frequency");
 		
 		function reload_page() {
   			if (name.value && full.value && price.value > 0 && contact.value && location.value && brief.value && 
-			   title.value && product.value) {
+			   title.value && product.value && freq.value > 0) {
     				add_item().then(function(){
       					window,location.reload_page(); 
 				});
@@ -217,7 +226,8 @@
 		
 		function add_item() { 
 			$.ajax({
-		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 'product=' + product, 'title=' + title
+		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 
+			'product=' + product, 'title=' + title, 'freq=' + freq,
  			url: '../AddToDB.php',
     			method: 'POST',
 			});
