@@ -8,7 +8,7 @@
 	
 	//echo "" . $result;
 	
-	echo "\n11:31 have gotten this far";
+	echo "\n11:34 have gotten this far";
 	
 	//while($row = $result->fetch_assoc()) {
 	while ($row = mysqli_fetch_assoc($result)){
