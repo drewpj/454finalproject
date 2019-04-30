@@ -2,7 +2,9 @@
 	include_once 'include/db.php';
 	$sql = "SELECT * from Tutors";
 	$result = $conn->query($sql);
+	echo "". $result;
 	echo "have gotten this far";
+	/*
 	while($row = $result->fetch_assoc()) {
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
@@ -11,9 +13,8 @@
 		
 		echo "<td> <input type=\"checkbox\" id= \" " . $id . " \" onclick=\"msg('" . $row["Class"] . "')\" value=1> </td>";
 		echo "</tr>";
-		
-		
 	}
+	*/
 	/*
 	for($i = 0; $i < 5; $i++){
 		$sql = "SELECT * from Tutors;";
