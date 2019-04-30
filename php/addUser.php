@@ -21,8 +21,8 @@
 	}
 	
 	$id = uniqid();
-	$sql = "INSERT INTO Users (Name, ID, Password, Wallet, Category) 
-		VALUES ('". $name . " " . $familyName ."', '". $id ."', '". $password ."', 10.00, 'User');";
+	$sql = "INSERT INTO Users (Name, ID, Password, Wallet, Category, email) 
+		VALUES ('". $name . " " . $familyName ."', '". $id ."', '". $password ."', 10.00, 'User', '".$email."');";
 		
 	$result = sqlsrv_query($conn, $sql); 
 	echo "Add user ran";
