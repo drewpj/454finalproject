@@ -2,6 +2,7 @@
 	include_once 'include/db.php';
 	$sql = "SELECT * from Tutors";
 	$result = $conn->query($sql);
+	echo "have gotten this far";
 	while($row = $result->fetch_assoc()) {
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
