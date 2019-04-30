@@ -56,7 +56,7 @@
 
 
 		<div class="container">
-		  <form action="/action_page.php">
+		  <form action="/Sell.php">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -228,7 +228,7 @@
 			$.ajax({
 		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 
 			'product=' + product, 'title=' + title, 'freq=' + freq,
- 			url: '../AddToDB.php',
+ 			url: '/AddToDB.php',
     			method: 'POST',
 			});
 		}
