@@ -216,7 +216,11 @@
 		}
 		
 		function add_item() { 
-			
+			$.ajax({
+		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 'product=' + product, 'title=' + title
+ 			url: '../AddToDB.php',
+    			method: 'POST',
+			});
 		}
 	</script>
 
