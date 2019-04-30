@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form action="/Home.php">
+		  <form action="Sell.php">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -164,9 +164,10 @@
 		    </div>
 
 
-		    <div class="row">
-                	<button type="button" id="submit" >Submit!</button>
-  		    </div>
+		    <div class="w-size25">
+							
+					<input type="submit" value="Submit!" class="">
+		    </div>
  		 </form>
 		</div>
 
