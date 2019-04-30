@@ -2,17 +2,17 @@
 	include_once 'include/db.php';
 	
 	
-	$sql = "SELECT * from Tutors;";
+	$sql = "SELECT * from Tutors";
 	
 	$result = sqlsrv_query($conn, $sql);
 	
 	//echo "" . $result;
 	
-	echo "  11:31 have gotten this far";
+	echo "\n11:31 have gotten this far";
 	
 	//while($row = $result->fetch_assoc()) {
-	//while ($row = mysqli_fetch_assoc($result)){
-	while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
+	while ($row = mysqli_fetch_assoc($result)){
+	//while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
 		echo "<td> " . $row["Price"] . " </td>";
@@ -21,7 +21,7 @@
 		echo "<td> <input type=\"checkbox\" id= \" " . $id . " \" onclick=\"msg('" . $row["Class"] . "')\" value=1> </td>";
 		echo "</tr>";
 	}
-	echo "end for loop";
+	echo "\nend for loop";
 	/*
 	for($i = 0; $i < 5; $i++){
 		$sql = "SELECT * from Tutors;";
