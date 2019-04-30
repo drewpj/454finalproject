@@ -167,7 +167,7 @@
 
 
 		    <div class="row">
-    		  	<input type="submit" value="Submit">
+                	<button type="button" id="submit" >Submit!</button>
   		    </div>
  		 </form>
 		</div>
