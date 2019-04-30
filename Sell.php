@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form action="/Sell.php">
+		  <form action="/Home.php">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -165,7 +165,7 @@
 
 
 		    <div class="row">
-                	<a href="SellAgain.html" class="next">Submit!</a>
+                	<button type="button" id="submit" >Submit!</button>
   		    </div>
  		 </form>
 		</div>
