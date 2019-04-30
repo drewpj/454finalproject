@@ -52,23 +52,8 @@
 
 
 
-<!--- side bar --->
-	<div id="mySidebar" class="sidebar">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      			<a href="Tutors.html">Tutors</a>
-      			<a href="Books.html">Books</a>
-     			<a href="Materials.html">Study Materials</a>
-    			<a href="Electronics.html">Electronics</a>
-		</div>
-
-		<div id="main">
-  			<button class="openbtn" onclick="openNav()">☰ Buy A Different Product</button>  
-		</div>
-
-
-
 <!--- table --->
-	<h2>Tutors Available</h2>
+	<h2>Shopping Cart</h2>
 
 	<input type="text" id="myInput" onkeyup="tableFunction()" placeholder="Search for your subject to be tutored in.." title="Type in a name">
 
@@ -108,13 +93,13 @@
 
 
 <!--- Add to cart button --->
-	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
+	<button class="open-button" onclick="openForm()">Continue To Payment</button>
 
 	<div class="form-popup" id="myForm">
   	   <form action="/cart.php" class="form-container">
     		<h2>Next Step?</h2>
 
-    		<button type="submit" class="btn">Continue To Shopping Cart</button>
+    		<button type="submit" class="btn">Continue To Payment</button>
     		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
  	   </form>
 	</div>
