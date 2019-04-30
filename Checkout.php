@@ -75,6 +75,16 @@
 
 
 	</table>
+	
+		<div class="w-size25">
+							<!-- Button -->
+							
+			<a href="checkoutMore.html" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+				Continue to checkout
+			</a>
+			
+			
+		</div>
 
 
 
