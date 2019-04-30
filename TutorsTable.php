@@ -6,10 +6,10 @@
 	
 	$result = sqlsrv_query($conn, $sql);
 	
-	echo "" . $result;
+	//echo "" . $result;
 	
 	echo "Any results? have gotten this far";
-	/*
+	
 	while($row = $result->fetch_assoc()) {
 		echo "<tr>";
 		echo "<td> FakeMajor" . $row["Class"] . " </td>";
@@ -19,7 +19,7 @@
 		echo "<td> <input type=\"checkbox\" id= \" " . $id . " \" onclick=\"msg('" . $row["Class"] . "')\" value=1> </td>";
 		echo "</tr>";
 	}
-	*/
+	echo "end for loop";
 	/*
 	for($i = 0; $i < 5; $i++){
 		$sql = "SELECT * from Tutors;";
