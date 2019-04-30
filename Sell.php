@@ -165,7 +165,7 @@
 
 
 		    <div class="row">
-                	<button type="button" id="submit" >Submit!</button>
+                	<a href="SellAgain.html" class="next">Submit!</a>
   		    </div>
  		 </form>
 		</div>
