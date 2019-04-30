@@ -14,7 +14,7 @@
 	//while ($row = mysqli_fetch_assoc($result)){
 	while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
 		echo "<tr>";
-		echo "<td>" . $row["Class"] . " </td>";
+		echo "<td>" . $row["Name"] . " </td>";
 		echo "<td> " . $row["Price"] . " </td>";
 		echo "<td> " . $row["Description"] . " </td>";
 		
