@@ -4,9 +4,9 @@
 	
 	$sql = "SELECT * from Tutors";
 	
-	//$result = $conn->query($sql);
+	$result = sqlsrv_query($conn, $sql);
 	
-	//echo "" . $result;
+	echo "" . $result;
 	
 	echo "have gotten this far";
 	/*
