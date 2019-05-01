@@ -72,8 +72,8 @@
   		<tr class="header">
     			<th style="width:20%;">Name</th>
     			<th style="width:20%;">Price</th>
-				<th style="width:60%;">Author</th>
-    			<th style="width:60%;">Brief Description</th>
+				<th style="width:20%;">Author</th>
+    			<th style="width:40%;">Brief Description</th>
 				<th style="width:10%;">Purchase?</th>
 				
   		</tr>
