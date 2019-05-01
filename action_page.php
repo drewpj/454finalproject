@@ -1,5 +1,6 @@
 <?php
 	include_once 'include/db.php';
+	var_dump($_POST);
 	
 	$name = $_POST['name'];
 	$freq = $_POST['frequency'];
