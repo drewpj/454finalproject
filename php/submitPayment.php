@@ -11,6 +11,7 @@
 			$sum = $sum + $val['price'];
 			//get ID from itemID
 			$sql = "SELECT Seller from Item WHERE ID='" . $val['id'] . "'";
+			echo $sql;
 			$result = sqlsrv_query($conn, $sql);
 			echo "   result=" . $result . "    ";			
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
