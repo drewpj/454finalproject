@@ -1,6 +1,6 @@
 <?php
 	include_once 'include/db.php';
-	//var_dump($_POST);
+	var_dump($_POST);
 	
 	$name = $_POST['name'];
 	$price = $_POST['price'];
