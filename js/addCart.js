@@ -1,23 +1,8 @@
 //<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 function msg(namex,idx,pricex){  
-/*
-	jQuery.ajax({
-   	 	type: "POST",
-    		url: 'your_functions_address.php',
-    		dataType: 'json',
-    		data: {funct,
 
-    		success: function (obj, textstatus) {
-                 	 if( !('error' in obj) ) {
-                      		yourVariable = obj.result;
-                  	}
-                  	else {
-                      		console.log(obj.error);
-                  	}
-            	}
-});*/
-	alert("before the ajaxcall");
+	alert("before the ajaxcall 8:56");
 	$.ajax({
 		 //data: 'name=' + name, 'id=' + id,
 		 data: { name: namex, id: idx, price: pricex},//'name=' + name, 'id=' + id,
@@ -33,22 +18,12 @@ function msg(namex,idx,pricex){
 		}
 	});
 
-/*
-	$.post( "../Request.php", { name: "John", time: "2pm" }, {
-		
-			function(data,status){
-				console.log("good call");
 
-			}).fail(function(err,status){
-				console.log("bad");
-
-	} );
-*/
 	alert("after the ajax call");
 }  
 
 
-alert("Im just running here 8:44");
+//alert("Im just running here 8:56");
 
 function cbf(){
 	alert("checkBixFunction");
