@@ -13,6 +13,7 @@
 			$sql = "SELECT Seller from Item WHERE ID='" . $val['id'] . "'";
 			$result = sqlsrv_query($conn, $sql); 
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
+			echo "   row=" . $row . "    ";
 			$sellerID = $row["Seller"];
 			echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
 			$buyerID = "Joe";
