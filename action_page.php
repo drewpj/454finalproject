@@ -3,17 +3,16 @@
 	//var_dump($_POST);
 	
 	$name = $_POST['name'];
-	$freq = $_POST['frequency'];
 	$price = $_POST['price'];
 	$brief = $_POST['brief'];
 	$product = $_POST['product'];
 	$title = $_POST['title'];
 	$author = $_POST['location'];
 	
-	if ($price > 0 && $freq > 0 && !empty($title)) {
+	if ($price > 0 && !empty($title)) {
 		$id = uniqid();	
 		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author) 
-		VALUES ('". $title . ", '". $id ."', '". $freq ."', '". $price ."', '". $brief ."', '". $category ."', '". $name ."',
+		VALUES ('". $title . "', '". $id ."', 0, $price, '". $brief ."', '". $category ."', '". $name ."',
 		'". $author ."');";
 		echo($sql);
 		$result = sqlsrv_query($conn, $sql); 
