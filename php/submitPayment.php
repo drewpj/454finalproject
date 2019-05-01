@@ -10,7 +10,7 @@
 			$sum = $sum + $val['price'];
 		}
 	}
-	echo "The total is: " . $sum;
+	echo "Your total is: " . $sum;
 	/*
 	//gathering session information
 	//$amount = (float) $_SESSION['total'];

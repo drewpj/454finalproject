@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form class="login" action="/action_page.php" method="post">
+		  <form action="/action_page.php" method="post">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -64,11 +64,11 @@
 
 		      <div class="col-75">
  		       <select id="product" name="product">
- 		         <option value="any">Please Select An Option...</option>
- 		         <option value="tutors">Tutors</option>
- 		         <option value="books">Books</option>
- 		         <option value="materials">Study Materials</option>
- 		         <option value="electronics">Electronics</option>
+ 		         <option value="Any">Please Select An Option...</option>
+ 		         <option value="Tutors">Tutors</option>
+ 		         <option value="Books">Books</option>
+ 		         <option value="Materials">Study Materials</option>
+ 		         <option value="Electronics">Electronics</option>
  		       </select>
  		     </div>
  		   </div>
@@ -95,7 +95,7 @@
  
 		   <div class="row">
  		     <div class="col-25">
-		        <label for="price">Your Name</label>
+		        <label for="name">Your Name</label>
 		     </div>
  		     <div class="col-75">
  		       <input type="text" id="name" name="name" placeholder="Insert name here...">
@@ -112,54 +112,23 @@
  		       <textarea id="brief" name="brief" placeholder="Write a brief description to go on the initial product page.." style="height:100px"></textarea>
  		     </div>
 		    </div>
- 		 </form>
-		</div>
-
-
-
-		<h2>More Information Product or Service</h2>
-		<p>Please enter any extra information you may have about your product or service. This will appear when a customer clicks on your offer.</p>
-
-		<div class="container">
-		  <form action="/action_page.php">
-		     
-		    <div class="row">
- 		     <div class="col-25">
-		        <label for="full">Number of products being sold</label>
- 		     </div>
-		      <div class="col-75">
- 		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
- 		     </div>
-		    </div>
 
 		    <div class="row">
 		      <div class="col-25">
-		        <label for="location">Location</label>
+		        <label for="author">Author</label>
 		      </div>
 		      <div class="col-75">
-		        <input type="text" id="location" name="location" placeholder="Location..">
+		        <input type="text" id="author" name="author" placeholder="Author..">
 		      </div>
-		    </div>
- 
-
-		   <div class="row">
- 		     <div class="col-25">
-		        <label for="full">Full Description of Your Product</label>
- 		     </div>
-
-
-		      <div class="col-75">
- 		       <textarea id="full" name="full" placeholder="Write a more detailed description to go on your product's information page.." style="height:200px"></textarea>
- 		     </div>
 		    </div>
 
 
 		    <div class="row">
 		      <div class="col-25">
-		        <label for="contact">Contact Information</label>
+		        <label for="class">Class</label>
 		      </div>
 		      <div class="col-75">
-		        <input type="text" id="contact" name="contact" placeholder="Please enter a way for the customer to contact you about your product or service..">
+		        <input type="text" id="class" name="class" placeholder="Class you are tutoring...">
 		      </div>
 		    </div>
 
