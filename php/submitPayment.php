@@ -10,7 +10,7 @@
 			
 			$sum = $sum + $val['price'];
 			//get ID from itemID
-			$sql = "SELECT Seller from Item WHERE ID='" . $val['id'] . "'";
+			$sql = "SELECT * from Item WHERE ID='" . $val['id'] . "'";
 			echo $sql;
 			$result = sqlsrv_query($conn, $sql);
 			echo "   result=" . $result . "    ";			
