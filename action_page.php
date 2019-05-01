@@ -8,14 +8,16 @@
 	$brief = $_POST['brief'];
 	$product = $_POST['product'];
 	$title = $_POST['title'];
+	$author = $_POST['location'];
 	
 	if ($price > 0 && $freq > 0 && !empty($title)) {
 		$id = uniqid();	
-		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
-		VALUES ('". $title . ", '". $id ."', '". $freq ."', '". $price ."', '". $brief ."', '". $category ."', '". $name ."');";
+		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author) 
+		VALUES ('". $title . ", '". $id ."', '". $freq ."', '". $price ."', '". $brief ."', '". $category ."', '". $name ."',
+		'". $author ."');";
 		echo($sql);
 		$result = sqlsrv_query($conn, $sql); 
-		header("Location: /SellAgain.php");
+		//header("Location: /SellAgain.php");
 	}
 	else {
 		//$message = "Invalid input";
