@@ -582,3 +582,17 @@ span.price {
   clear: both;
   display: table;
 }
+
+
+
+
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 500px;
+   height: 150px;
+   background-color: white;
+   color: white;
+   text-align: center;
+}
