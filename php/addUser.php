@@ -8,9 +8,6 @@
 	$email2 = $_POST['email2'];
 	$password = $_POST['password1'];
 	$password2 = $_POST['password2'];
-	
-	if(!preg_match("/.edu$/ $email))
-		echo "bad email";
 
 	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2))
 		echo "invalid input";
