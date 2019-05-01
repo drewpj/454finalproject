@@ -8,7 +8,7 @@
 	$email2 = $_POST['email2'];
 	$password = $_POST['password1'];
 	$password2 = $_POST['password2'];
-	//$regex = "/.edu$/"
+	$regex = "/.edu$/"
 	
 	if(!preg_match($regex, $email))
 		echo "bad email";
