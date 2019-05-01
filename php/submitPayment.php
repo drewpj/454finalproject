@@ -26,11 +26,13 @@
 			$result = sqlsrv_query($conn, $sql); 
 		}
 	}
-	echo "Your total is: " . $sum;
+	echo "Congrats! Your payment was successful! Your total is: " . $sum;
 	
-	
-	
+	<a href="Home.php" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+				Press me to go home!
+			</a>
 	/*
+	
 	//gathering session information
 	//$amount = (float) $_SESSION['total'];
 	$items = $_SESSION['cart'];
