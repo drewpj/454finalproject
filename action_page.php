@@ -1,26 +1,28 @@
 <?php
 	include_once 'include/db.php';
-	var_dump($_POST);
+	//var_dump($_POST);
 	
 	$name = $_POST['name'];
 	$price = (int)$_POST['price'];
 	$brief = $_POST['brief'];
 	$product = $_POST['product'];
 	$title = $_POST['title'];
-	$author = $_POST['location'];
+	$author = $_POST['author'];
+	$class = $_POST['class'];
 	
-	//if ($price > 0 && !empty($title)) {
+	if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($author) && !empty($brief)) {
 		$id = uniqid();	
-		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author) 
-		VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."', '". $author ."');";
-		echo($sql);
+		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
+		VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."',
+		'". $author ."', '". $class ."');";
+		//echo($sql);
 		$result = sqlsrv_query($conn, $sql); 
-		//header("Location: /SellAgain.php");
-	//}
-	//else {
+		header("Location: /SellAgain.php");
+	}
+	else {
 		//$message = "Invalid input";
-		//header("Location: /SellFail.php");
+		header("Location: /SellFail.php");
 		//echo("<script type='text/javascript'> alert('$message'); </script>");
-	//}
+	}
 	
 ?>
