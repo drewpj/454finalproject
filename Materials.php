@@ -87,7 +87,17 @@
 	</table>
 
 
+<!--- Add to cart button --->
+	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
 
+	<div class="form-popup" id="myForm">
+  	   <form action="/Checkout.php" class="form-container">
+    		<h2>Next Step?</h2>
+
+    		<button type="submit" class="btn">Continue To Shopping Cart</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
+ 	   </form>
+	</div>
 
             
 
