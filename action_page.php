@@ -10,8 +10,8 @@
 	$title = $_POST['title'];
 	
 	if ($price > 0 && $freq > 0 && !empty($title)) {
-		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
-		VALUES ($title, '" . uniqid() . "', $freq, $price, $brief, $product, $name)";
+		$id = uniqid();		
+		VALUES ('". $name . " " . $familyName ."', '". $id ."', '". $password ."', 10.00, 'User', '".$email."');";
 		echo($sql);
 		$result = sqlsrv_query($conn, $sql);
 		header("Location: /SellAgain.php");
