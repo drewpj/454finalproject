@@ -116,7 +116,7 @@
 		        <label for="frequency">Number of products being sold</label>
  		     </div>
 		      <div class="col-75">
- 		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
+ 		       <input type="number" id="frequency" name="frequency" placeholder="Number selling...">
  		     </div>
 		    </div>
 
