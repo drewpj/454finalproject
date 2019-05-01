@@ -46,17 +46,17 @@
 	<div class="row">
 	  <div class="column">
 	    <div class="content">
-	      <img src="tutors.jpg" alt="Tutors" style="width:100%">
+	      <img src="tutor.jpg" alt="Tutors" style="width:100%">
 	      <h3>Tutors</h3>
-      	      <a href="Tutors.html">Tutors</a>
+      	      <a href="Tutors.php">Tutors</a>
 	    </div>
 	  </div>
 
 	  <div class="column">
     	<div class="content">
-	    <img src="books.jpg" alt="Books" style="width:100%">
+	    <img src="book.jpg" alt="Books" style="width:100%">
 	      <h3>Books</h3>
-      	      <a href="Books.html">Books</a>
+      	      <a href="Books.php">Books</a>
 	    </div>
 	  </div>
 	
@@ -64,7 +64,7 @@
 	    <div class="content">
 	    <img src="materials.jpg" alt="Materials" style="width:100%">
 	      <h3>Study Materials</h3>
-     	      <a href="Materials.html">Study Materials</a>
+     	      <a href="Materials.php">Study Materials</a>
 	    </div>
 	  </div>
 
@@ -72,7 +72,7 @@
 	    <div class="content">
 	    <img src="electronics.jpg" alt="Electronics" style="width:100%">
 	      <h3>Electronics</h3>
-    	      <a href="Electronics.html">Electronics</a>
+    	      <a href="Electronics.php">Electronics</a>
 	    </div>
 	  </div>
 
