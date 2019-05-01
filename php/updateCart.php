@@ -19,6 +19,7 @@ if (isset($_SESSION['cart'][$name])){
 	$_SESSION['cart'][$name]['inCart'] = True;
 	$_SESSION['cart'][$name]['name'] = $name;
 	$_SESSION['cart'][$name]['id'] = $_POST['id'];
+	$_SESSION['cart'][$name]['price'] = $_POST['price'];
 }
 
 
