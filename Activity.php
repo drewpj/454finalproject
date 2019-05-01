@@ -35,9 +35,7 @@
     			</div>
   		</div> 
   		
-		<a href="Sell.html">Sell</a>
-  		<a class="active" href="Activity.html">Activity</a>
-  			
+		<a href="Sell.html">Sell</a>  			
 		<a href="cart.html">Cart</a>
 		<a href="login.html">Log In</a>
     			</form>
@@ -77,7 +75,7 @@
 
             
 <div class="footer">
-  <p>Footer</p>
+  <p>Copyright© Group 17</p>
 </div>
 
 

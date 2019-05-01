@@ -34,8 +34,6 @@
   		</div> 
 
   		<a class="active" href="Sell.html">Sell</a>
-  		<a href="Activity.html">Activity</a>
-
 		<a href="cart.html">Cart</a>
 		<a href="login.html">Log In</a>
     			</form>
@@ -118,7 +116,7 @@
 		        <label for="frequency">Number of products being sold</label>
  		     </div>
 		      <div class="col-75">
- 		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
+ 		       <input type="number" id="frequency" name="frequency" placeholder="Number selling...">
  		     </div>
 		    </div>
 
@@ -172,7 +170,7 @@
             
 
 <div class="footer">
-  <p>Footer</p>
+  <p>Copyright© Group 17</p>
 </div>
 
 
