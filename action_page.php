@@ -9,7 +9,7 @@
 	$product = $_POST['product'];
 	$title = $_POST['title'];
 	
-	if ($price > 0 && $freq > 0) {
+	if ($price > 0 && $freq > 0 && !empty($title)) {
 		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
 		VALUES ($title, '" . uniqid() . "', '$freq, $price, $brief, $product, $name)";
 		$result = sqlsrv_query($conn, $sql);
