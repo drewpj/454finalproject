@@ -70,31 +70,34 @@
 
 	<table id="myTable">
   		<tr class="header">
-    			<th style="width:20%;">Service</th>
+    			<th style="width:20%;">Name</th>
     			<th style="width:20%;">Price</th>
     			<th style="width:60%;">Brief Description</th>
+				<th style="width:10%;">Purchase?</th>
   		</tr>
 		<tr>
   			<td>Pencil</td>
     			<td>$0.99</td>
 			<td>These will be inputted by our database</td>
   		</tr>
-  		<tr>
-    			<td>ComSci</td>
-    			<td>Needs to be default money</td>
-			<td>I hope this is okay to work with</td>
-
-  		</tr>
-  		<tr>
-    			<td>Nat is awesome</td>
-    			<td>priceless</td>
-			<td>you're welcome</td>
-
-  		</tr>
+  		
+		<?php
+			include 'php/MaterialsTable.php';
+		?>
 	</table>
 
 
+<!--- Add to cart button --->
+	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
 
+	<div class="form-popup" id="myForm">
+  	   <form action="/Checkout.php" class="form-container">
+    		<h2>Next Step?</h2>
+
+    		<button type="submit" class="btn">Continue To Shopping Cart</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
+ 	   </form>
+	</div>
 
             
 
