@@ -84,7 +84,7 @@
 
 
 <div class="footer">
-  <p>Footer</p>
+  <p>Copyright© Group 17</p>
 </div>
 
 
