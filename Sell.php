@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form action="AddToDB.php">
+		  <form action="/action_page.php">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -197,40 +197,6 @@
   		   }
 		}
 		
-		var element = document.getElementById("submit");
-		element.addEventListener("click", reload);
-		var contact = document.getElementById("contact");
-		var full = document.getElementById("full");
-		var location = document.getElementById("location");
-		var brief = document.getElementById("brief");
-		var title = document.getElementById("title");
-		var price = document.getElementById("price");
-		var product = document.getElementById("product");
-		var name = document.getElementById("name");
-		var freq = document.getElementById("frequency");
-		
-		function reload_page() {
-  			if (name.value && full.value && price.value > 0 && contact.value && location.value && brief.value && 
-			   title.value && product.value && freq.value > 0) {
-    				add_item().then(function(){
-      					window,location.reload_page(); 
-				});
-    				window.alert('Product added successfully');
-  			}
-  			else {
-    				window.alert('Invalid input');
-    				window,location.reload_page();
-  			}
-		}
-		
-		function add_item() { 
-			$.ajax({
-		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 
-			'product=' + product, 'title=' + title, 'freq=' + freq,
- 			url: '/AddToDB.php',
-    			method: 'POST',
-			});
-		}
 	</script>
 
 
