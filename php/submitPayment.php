@@ -11,19 +11,19 @@
 			$sum = $sum + $val['price'];
 			//get ID from itemID
 			$sql = "SELECT * from Item WHERE ID='" . $val['id'] . "'";
-			echo $sql;
+			//echo $sql;
 			$result = sqlsrv_query($conn, $sql);
-			echo "   result=" . $result . "    ";			
+			//echo "   result=" . $result . "    ";			
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
-			echo "   row=" . $row . "    ";
+			//echo "   row=" . $row . "    ";
 			$sellerID = $row["Seller"];
-			echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
+			//echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
 			$buyerID = "Joe";
 			$time = time();
-			$sql = "\n     INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")       ";
-			echo "\n\n" . $sql;
+			$sql = "INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
+			//echo "\n\n" . $sql;
 		
-			//$result = sqlsrv_query($conn, $sql); 
+			$result = sqlsrv_query($conn, $sql); 
 		}
 	}
 	echo "Your total is: " . $sum;
