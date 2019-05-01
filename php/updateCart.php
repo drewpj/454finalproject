@@ -5,8 +5,8 @@ session_start();
 if ( ! isset($_SESSION['cart']) ) $_SESSION['cart'] = array();
 
 $name = $_POST['name'];
-print("name = " . $name);
-print("id = " . $_POST['id']);
+//print("name = " . $name);
+//print("id = " . $_POST['id']);
 
 if (isset($_SESSION['cart'][$name])){
 	if ($_SESSION['cart'][$name]['inCart'] == True){
@@ -24,11 +24,11 @@ if (isset($_SESSION['cart'][$name])){
 
 
 //echo "This is in request";
-print_r($_POST);
+//print_r($_POST);
 
 
 
-echo "php/cart.php has successfully ran";
+//echo "php/cart.php has successfully ran";
 
 
 ?>

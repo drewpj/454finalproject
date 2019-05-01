@@ -7,10 +7,23 @@
 	$sum = 0;
 	foreach ($cart as $val){
 		if ($val['inCart'] == true){
+			
 			$sum = $sum + $val['price'];
+			//get ID from itemID
+			$sql = "SELECT Seller from Item WHERE ID='" . $val['id'] . "'";
+			$sellerID = sqlsrv_query($conn, $sql); 
+			$buyerID = "Joe";
+			$time = time();
+			$sql = "INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
+			echo "\n\n" . $sql;
+		
+			//$result = sqlsrv_query($conn, $sql); 
 		}
 	}
 	echo "Your total is: " . $sum;
+	
+	
+	
 	/*
 	//gathering session information
 	//$amount = (float) $_SESSION['total'];
