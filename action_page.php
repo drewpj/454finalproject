@@ -16,8 +16,8 @@
 	}
 	else {
 		$message = "Invalid input";
-		header("Location: /Sell.php");
 		echo("<script type='text/javascript'> alert('$message'); </script>");
+		header("Location: /Sell.php");
 	}
 	
 ?>
