@@ -70,18 +70,11 @@
 	<table id="myTable">
   		<tr class="header">
     			<th style="width:20%;">Name</th>
-    			<th style="width:20%;">Price</th>
-				<th style="width:20%;">Author</th>
+    			<th style="width:20%;">Author</th>
+				<th style="width:20%;">Price</th>
     			<th style="width:40%;">Brief Description</th>
 				<th style="width:10%;">Purchase?</th>
 				
-  		</tr>
-		<tr>
-  			<td>How to pass 454</td>
-    			<td>$0.01</td>
-				<td>$0.01</td>
-			<td>These will be inputted by our database</td>
-			<td>$0.01</td>
   		</tr>
 		<?php
 			include 'php/BooksTable.php';
