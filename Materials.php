@@ -76,11 +76,6 @@
     			<th style="width:60%;">Brief Description</th>
 				<th style="width:10%;">Purchase?</th>
   		</tr>
-		<tr>
-  			<td>Pencil</td>
-    			<td>$0.99</td>
-			<td>These will be inputted by our database</td>
-  		</tr>
   		
 		<?php
 			include 'php/MaterialsTable.php';
