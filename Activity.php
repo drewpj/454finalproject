@@ -35,7 +35,8 @@
     			</div>
   		</div> 
   		
-		<a href="Sell.php">Sell</a>  			
+		<a href="Sell.php">Sell</a>  
+		<a class="active" href="Activity.php">Activity</a> 			
 		<a href="cart.php">Cart</a>
 		<a href="login.html">Log In</a>
     			</form>
