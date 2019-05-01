@@ -3,7 +3,14 @@
 	//require 'processCard.php';
 	include_once 'include/db.php';
 	session_start();
-	
+	$cart = $_SESSION['cart'];
+	$sum = 0;
+	foreach ($cart as $val){
+		if ($val['inCart'] == true){
+			$sum = $sum + $val['price'];
+	}
+	echo "The total is: " . $sum;
+	/*
 	//gathering session information
 	//$amount = (float) $_SESSION['total'];
 	$items = $_SESSION['cart'];
@@ -64,4 +71,6 @@
 		//if the card isn't valid, don't print the recipt 
 		//echo nl2br("Processing card failed. Are you sure your information is correct?\n");
 	//}
+	*/
+	
 ?>
