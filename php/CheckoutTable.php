@@ -1,6 +1,7 @@
 <?php
 
 			session_start();
+			//var_dump($_POST)
 			$cart = $_SESSION['cart'];
 			foreach ($cart as $val){
 				if ($val['inCart'] == true){
