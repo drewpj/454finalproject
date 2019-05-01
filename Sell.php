@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form action="php/login.php">
+		  <form action="AddToDB.php">
 
 		   <div class="row">
  		     <div class="col-25">
