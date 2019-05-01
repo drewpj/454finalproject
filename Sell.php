@@ -54,7 +54,7 @@
 
 
 		<div class="container">
-		  <form class="login" action="/action_page.php" method="post">
+		  <form action="/action_page.php" method="post">
 
 		   <div class="row">
  		     <div class="col-25">
