@@ -14,7 +14,7 @@
 			$result = sqlsrv_query($conn, $sql); 
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
 			$sellerID = $row["Seller"];
-			echo "SellerID=" . $sellerID "  ID=" . $val['id'] . "     ";
+			echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
 			$buyerID = "Joe";
 			$time = time();
 			$sql = "\n     INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")       ";
