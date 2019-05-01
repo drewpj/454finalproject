@@ -4,7 +4,7 @@
 	session_start();
 	if (!isset($_SESSION['ID'])){
 		echo "You are not signed in! Please sign in before selling an item.";
-		<button onclick="Sell.php">Click Here To Continue to the Sell Page</button>
+		echo "<button onclick=\"Sell.php\">Click Here To Continue to the Sell Page</button>";
 		return;
 	}
 	
