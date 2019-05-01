@@ -2,7 +2,7 @@
 
 	include_once 'include/db.php';
 		
-	$sql = "SELECT * from Item WHERE category='Electronics'";
+	$sql = "SELECT * from Item WHERE category='Electronic'";
 	
 	$result = sqlsrv_query($conn, $sql);
 
