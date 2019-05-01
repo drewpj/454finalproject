@@ -64,10 +64,10 @@
 		      <div class="col-75">
  		       <select id="product" name="product">
  		         <option value="Any">Please Select An Option...</option>
- 		         <option value="Tutors">Tutors</option>
- 		         <option value="Books">Books</option>
- 		         <option value="Materials">Study Materials</option>
- 		         <option value="Electronics">Electronics</option>
+ 		         <option value="Tutor">Tutors</option>
+ 		         <option value="Book">Books</option>
+ 		         <option value="Material">Study Materials</option>
+ 		         <option value="Electronic">Electronics</option>
  		       </select>
  		     </div>
  		   </div>
