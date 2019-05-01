@@ -20,7 +20,7 @@
 			//echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
 			$buyerID = "Joe";
 			$time = time();
-			$sql = "INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
+			$sql = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
 			//echo "\n\n" . $sql;
 		
 			$result = sqlsrv_query($conn, $sql); 
