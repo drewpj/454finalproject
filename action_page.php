@@ -1,6 +1,6 @@
 <?php
-	include_once 'include/db.php';
-	var_dump($_POST);
+	include_once '...include/db.php';
+	//var_dump($_POST);
 	
 	$name = $_POST['name'];
 	$freq = $_POST['frequency'];
@@ -13,8 +13,8 @@
 		$id = uniqid();	
 		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
 		VALUES ('". $title . ", '". $id ."', '". $freq ."', '". $price ."', '". $brief ."', '".$category."', '". $name ."');";
-		//echo($sql);
-		$result = sqlsrv_query($conn, $sql);
+		echo($sql);
+		$result = sqlsrv_query($conn, $sql); 
 		header("Location: /SellAgain.php");
 	}
 	else {
