@@ -43,20 +43,24 @@
 
 	<div class="row">
 	  <div class="column">
+      	    <a href="Tutors.html">Tutors</a>
 	    <img src="tutor.jpg" alt="Tutors" style="width:100%">
 	  </div>
 
 	  <div class="column">
+      	    <a href="Tutors.html">Tutors</a>
 	    <img src="book.jpg" alt="Books" style="width:100%">
 	  </div>
 	</div>
 
 	<div class="row">
 	  <div class="column">
+     	    <a href="Materials.html">Study Materials</a>
 	    <img src="materials.jpg" alt="Materials" style="width:100%">
 	  </div>
 
 	  <div class="column">
+    	    <a href="Electronics.html">Electronics</a>
 	    <img src="electronics.jpg" alt="Electronics" style="width:100%">
 	  </div>
 	</div>
