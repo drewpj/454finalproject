@@ -1,6 +1,12 @@
 <?php
 	include_once 'include/db.php';
-	var_dump($_POST);
+	//var_dump($_POST);
+	session_start();
+	if (!isset($_SESSION['ID'])){
+		echo "You are not signed in! Please sign in before selling an item.";
+		<button onclick="Sell.php">Click Here To Continue to the Sell Page</button>
+		return;
+	}
 	
 	$name = $_POST['name'];
 	$price = (int)$_POST['price'];
