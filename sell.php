@@ -19,27 +19,23 @@
 
 <!--- navbar --->
 	<div class="topnav">
-  		<a href="Home.html">Home</a>
+  		<a href="Home.php">Home</a>
 
   		<div class="dropdown">
     			<button class="dropbtn">Buy 
       				<i class="fa fa-caret-down"></i>
     			</button>
     			<div class="dropdown-content">
-      				<a href="Tutors.html">Tutors</a>
-      				<a href="Books.html">Books</a>
-     				<a href="Materials.html">Study Materials</a>
-    				<a href="Electronics.html">Electronics</a>
+      				<a href="Tutors.php">Tutors</a>
+      				<a href="Books.php">Books</a>
+     				<a href="Materials.php">Study Materials</a>
+    				<a href="Electronics.php">Electronics</a>
     			</div>
   		</div> 
 
-  		<a class="active" href="Sell.html">Sell</a>
-  		<a href="Activity.html">Activity</a>
-
-		<div class="search-container">
-    			<form action="/action_page.php">
-      				<input type="text" placeholder="Search.." name="search">
-      				<button type="submit">Submit</button>
+  		<a class="active" href="Sell.php">Sell</a>
+		<a href="cart.php">Cart</a>
+		<a href="login.html">Log In</a>
     			</form>
   		</div>
 	</div>
@@ -56,7 +52,7 @@
 
 
 		<div class="container">
-		  <form action="/action_page.php">
+		  <form action="/action_page.php" method="post">
 
 		   <div class="row">
  		     <div class="col-25">
@@ -66,11 +62,11 @@
 
 		      <div class="col-75">
  		       <select id="product" name="product">
- 		         <option value="any">Please Select An Option...</option>
- 		         <option value="tutors">Tutors</option>
- 		         <option value="books">Books</option>
- 		         <option value="materials">Study Materials</option>
- 		         <option value="electronics">Electronics</option>
+ 		         <option value="Any">Please Select An Option...</option>
+ 		         <option value="Tutors">Tutors</option>
+ 		         <option value="Books">Books</option>
+ 		         <option value="Materials">Study Materials</option>
+ 		         <option value="Electronics">Electronics</option>
  		       </select>
  		     </div>
  		   </div>
@@ -97,7 +93,7 @@
  
 		   <div class="row">
  		     <div class="col-25">
-		        <label for="price">Your Name</label>
+		        <label for="name">Your Name</label>
 		     </div>
  		     <div class="col-75">
  		       <input type="text" id="name" name="name" placeholder="Insert name here...">
@@ -114,61 +110,31 @@
  		       <textarea id="brief" name="brief" placeholder="Write a brief description to go on the initial product page.." style="height:100px"></textarea>
  		     </div>
 		    </div>
- 		 </form>
-		</div>
-
-
-
-		<h2>More Information Product or Service</h2>
-		<p>Please enter any extra information you may have about your product or service. This will appear when a customer clicks on your offer.</p>
-
-		<div class="container">
-		  <form action="/action_page.php">
-		     
-		    <div class="row">
- 		     <div class="col-25">
-		        <label for="full">Number of products being sold</label>
- 		     </div>
-		      <div class="col-75">
- 		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
- 		     </div>
-		    </div>
 
 		    <div class="row">
 		      <div class="col-25">
-		        <label for="location">Location</label>
+		        <label for="author">Author</label>
 		      </div>
 		      <div class="col-75">
-		        <input type="text" id="location" name="location" placeholder="Location..">
+		        <input type="text" id="author" name="author" placeholder="Author..">
 		      </div>
-		    </div>
- 
-
-		   <div class="row">
- 		     <div class="col-25">
-		        <label for="full">Full Description of Your Product</label>
- 		     </div>
-
-
-		      <div class="col-75">
- 		       <textarea id="full" name="full" placeholder="Write a more detailed description to go on your product's information page.." style="height:200px"></textarea>
- 		     </div>
 		    </div>
 
 
 		    <div class="row">
 		      <div class="col-25">
-		        <label for="contact">Contact Information</label>
+		        <label for="class">Class</label>
 		      </div>
 		      <div class="col-75">
-		        <input type="text" id="contact" name="contact" placeholder="Please enter a way for the customer to contact you about your product or service..">
+		        <input type="text" id="class" name="class" placeholder="Class you are tutoring...">
 		      </div>
 		    </div>
 
 
-		    <div class="row">
-    		  	<input type="submit" value="Submit">
-  		    </div>
+		    <div class="w-size25">
+							
+					<input type="submit" value="Submit!" class="">
+		    </div>
  		 </form>
 		</div>
 
@@ -182,6 +148,9 @@
 
             
 
+<div class="footer">
+  <p>Copyright© Group 17</p>
+</div>
 
 
 	<script>
@@ -198,40 +167,6 @@
   		   }
 		}
 		
-		var element = document.getElementById("submit");
-		element.addEventListener("click", reload);
-		var contact = document.getElementById("contact");
-		var full = document.getElementById("full");
-		var location = document.getElementById("location");
-		var brief = document.getElementById("brief");
-		var title = document.getElementById("title");
-		var price = document.getElementById("price");
-		var product = document.getElementById("product");
-		var name = document.getElementById("name");
-		var freq = document.getElementById("frequency");
-		
-		function reload_page() {
-  			if (name.value && full.value && price.value > 0 && contact.value && location.value && brief.value && 
-			   title.value && product.value && freq.value > 0) {
-    				add_item().then(function(){
-      					window,location.reload_page(); 
-				});
-    				window.alert('Product added successfully');
-  			}
-  			else {
-    				window.alert('Invalid input');
-    				window,location.reload_page();
-  			}
-		}
-		
-		function add_item() { 
-			$.ajax({
-		 	data: 'name=' + name, 'price=' + price, 'brief=' + brief, 
-			'product=' + product, 'title=' + title, 'freq=' + freq,
- 			url: '../AddToDB.php',
-    			method: 'POST',
-			});
-		}
 	</script>
 
 
