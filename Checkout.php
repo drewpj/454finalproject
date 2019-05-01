@@ -23,22 +23,22 @@
 
 <!--- navbar --->
 	<div class="topnav">
-  		<a href="Home.html">Home</a>
+  		<a href="Home.php">Home</a>
   		
 		<div class="dropdown">
     			<button class="dropbtn">Buy 
       				<i class="fa fa-caret-down"></i>
     			</button>
     			<div class="dropdown-content">
-      				<a href="Tutors.html">Tutors</a>
-      				<a href="Books.html">Books</a>
-     				<a href="Materials.html">Study Materials</a>
-    				<a href="Electronics.html">Electronics</a>
+      				<a href="Tutors.php">Tutors</a>
+      				<a href="Books.php">Books</a>
+     				<a href="Materials.php">Study Materials</a>
+    				<a href="Electronics.php">Electronics</a>
     			</div>
   		</div> 
   		
-		<a href="Sell.html">Sell</a>
-		<a class="active" href="cart.html">Cart</a>
+		<a href="Sell.php">Sell</a>
+		<a class="active" href="cart.php">Cart</a>
 		<a href="login.html">Log In</a>
 
 
@@ -68,7 +68,7 @@
 		<div class="w-size25">
 							<!-- Button -->
 							
-			<a href="Checkout.html" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+			<a href="Checkout.php" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
 				Checkout!
 			</a>
 			

@@ -21,22 +21,22 @@
 
 <!--- navbar --->
 	<div class="topnav">
-  		<a href="Home.html">Home</a>
+  		<a href="Homephp">Home</a>
 
   		<div class="dropdown">
     			<button class="dropbtn">Buy 
       				<i class="fa fa-caret-down"></i>
     			</button>
     			<div class="dropdown-content">
-      				<a href="Tutors.html">Tutors</a>
-      				<a class="active" href="Books.html">Books</a>
-     				<a href="Materials.html">Study Materials</a>
-    				<a href="Electronics.html">Electronics</a>
+      				<a href="Tutors.php">Tutors</a>
+      				<a class="active" href="Books.php">Books</a>
+     				<a href="Materials.php">Study Materials</a>
+    				<a href="Electronics.php">Electronics</a>
     			</div>
 
   		</div> 
-  		<a href="Sell.html">Sell</a>
-		<a href="cart.html">Cart</a>
+  		<a href="Sell.php">Sell</a>
+		<a href="cart.php">Cart</a>
 		<a href="login.html">Log In</a>
     			</form>
   		</div>
@@ -48,10 +48,10 @@
 <!--- side bar --->
 	<div id="mySidebar" class="sidebar">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      			<a href="Tutors.html">Tutors</a>
-      			<a href="Books.html">Books</a>
-     			<a href="Materials.html">Study Materials</a>
-    			<a href="Electronics.html">Electronics</a>
+      			<a href="Tutors.php">Tutors</a>
+      			<a href="Books.php">Books</a>
+     			<a href="Materials.php">Study Materials</a>
+    			<a href="Electronics.php">Electronics</a>
 		</div>
 
 		<div id="main">
