@@ -12,12 +12,12 @@
 		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller ) 
 		VALUES ($title, '" . uniqid() . "', '$freq, $price, $brief, $product, $name)";
 		$result = sqlsrv_query($conn, $sql);
-		header("Location: /Sell.php");
+		header("Location: /Tutors.php");
 	}
 	else {
 		$message = "Invalid input";
 		echo("<script type='text/javascript'> alert('$message'); </script>");
-		//header("Location: /Sell.php");
+		header("Location: /Sell.php");
 	}
 	
 ?>
