@@ -10,14 +10,14 @@
 	$password2 = $_POST['password2'];
 	//$regex = "/.edu$/"
 	
-	//if(!preg_match($pattern, $email))
+	//if(!preg_match($regex, $email))
 		//echo "bad email";
 		
-	//if(!preg_match($pattern, $email2))
+	//if(!preg_match($regex, $email2))
 		//echo "bad email";
 
-	//if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2))
-		//echo "invalid input";
+	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2))
+		echo "invalid input";
 	
 	if ($email != $email2){
 		echo "bad email";
