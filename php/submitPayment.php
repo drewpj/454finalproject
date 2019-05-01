@@ -18,7 +18,7 @@
 			//echo "   row=" . $row . "    ";
 			$sellerID = $row["Seller"];
 			//echo "SellerID=" . $sellerID . "  ID=" . $val['id'] . "     ";
-			$buyerID = "Joe";
+			$buyerID = $_SESSION['ID'];
 			$time = time();
 			$sql = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
 			//echo "\n\n" . $sql;
