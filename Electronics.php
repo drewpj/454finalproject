@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="stylesheet.css">
 	<script> src="header.js"</script>
 	<script> src="tables.js" src="iCloud Drive/Documents/07 Senior Spring/CIS454 - SoftwareImplementation/Project2/tables.js"</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/addCart.js"></script> 
       </head>
 
 
@@ -70,37 +72,29 @@
 
 	<table id="myTable">
   		<tr class="header">
-    			<th style="width:20%;">Service</th>
+    			<th style="width:20%;">Name</th>
     			<th style="width:20%;">Price</th>
     			<th style="width:60%;">Brief Description</th>
+				<th style="width:10%;">Purchase?</th>
   		</tr>
-		<tr>
-  			<td>Broken Macbook Air</td>
-    			<td>-$100.0</td>
-			<td>These will be inputted by our database</td>
-  		</tr>
-  		<tr>
-    			<td>Phone with Mohan's Number</td>
-    			<td>Needs to be default money</td>
-			<td>I hope this is okay to work with</td>
-
-  		</tr>
-  		<tr>
-    			<td>iPhone Charger</td>
-    			<td>Extortionate</td>
-			<td>I hope this is okay to work with</td>
-
-  		</tr>
-  		<tr>
-    			<td>Nat is awesome</td>
-    			<td>priceless</td>
-			<td>you're welcome</td>
-
-  		</tr>
+		
+		<?php
+			include 'php/ElectronicsTable.php';
+		?>
 	</table>
 
 
+<!--- Add to cart button --->
+	<button class="open-button" onclick="openForm()">Add Selected Items To Shopping Cart</button>
 
+	<div class="form-popup" id="myForm">
+  	   <form action="/Checkout.php" class="form-container">
+    		<h2>Next Step?</h2>
+
+    		<button type="submit" class="btn">Continue To Shopping Cart</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Keep Shopping</button>
+ 	   </form>
+	</div>
 
             
 
@@ -151,6 +145,13 @@
 		function closeNav() {
   			document.getElementById("mySidebar").style.width = "0";
   			document.getElementById("main").style.marginLeft= "0";
+		}
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
 		}
 	</script>
         </main>

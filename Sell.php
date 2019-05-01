@@ -95,7 +95,7 @@
  
 		   <div class="row">
  		     <div class="col-25">
-		        <label for="price">Your Name</label>
+		        <label for="name">Your Name</label>
 		     </div>
  		     <div class="col-75">
  		       <input type="text" id="name" name="name" placeholder="Insert name here...">
@@ -112,20 +112,10 @@
  		       <textarea id="brief" name="brief" placeholder="Write a brief description to go on the initial product page.." style="height:100px"></textarea>
  		     </div>
 		    </div>
- 		 </form>
-		</div>
-
-
-
-		<h2>More Information Product or Service</h2>
-		<p>Please enter any extra information you may have about your product or service. This will appear when a customer clicks on your offer.</p>
-
-		<div class="container">
-		  <form action="/action_page.php">
 		     
 		    <div class="row">
  		     <div class="col-25">
-		        <label for="full">Number of products being sold</label>
+		        <label for="frequency">Number of products being sold</label>
  		     </div>
 		      <div class="col-75">
  		       <input type="number" id="frequency" name="full" placeholder="Number selling...">
