@@ -15,15 +15,9 @@
 	$title = $_POST['title'];
 	$author = $_POST['author'];
 	$class = $_POST['class'];
+
 	
-	$id = uniqid();	
-			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
-			VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."',
-			'". $author ."', '". $class ."');";
-			echo($sql);
-			$result = sqlsrv_query($conn, $sql);
 	
-	/*
 	if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($author) && !empty($brief)) {
 			$id = uniqid();	
 			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
@@ -56,5 +50,5 @@
 		header("Location: /SellFail.php");
 		//echo("<script type='text/javascript'> alert('$message'); </script>");
 	}
-	*/
+	
 ?>
