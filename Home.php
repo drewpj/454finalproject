@@ -61,6 +61,7 @@
 	    </div>
 	  </div>
 	
+	<div class="row">
 	  <div class="column">
 	    <div class="content">
 	    <img src="materials.jpg" alt="Materials" style="width:30%">
