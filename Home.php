@@ -41,6 +41,7 @@
 
 
 
+<div class="main">
 
 <!-- Portfolio Gallery Grid -->
 	<div class="row">
@@ -75,20 +76,6 @@
     	      <a href="Electronics.php">Electronics</a>
 	    </div>
 	  </div>
-
-
-
-
-
-<!-- END GRID -->
-	</div>
-
-	<div class="content">
-	  <img src="syracuse.jpg" alt="Syracuse" style="width:100%">
-	  <h3>About Us</h3>
-	  <p>We are just four Computer Science seniors trying to graduate with good grades in 10 days </p>
-	  <p> :) </p>
-	</div>
 
 <!-- END MAIN -->
 </div>
