@@ -18,7 +18,7 @@
 		echo "<td> " . $row["Price"] . " </td>";
 		echo "<td> " . $row["Description"] . " </td>";
 		
-		echo "<td> <input type=\"checkbox\" id= \" " . $row["id"] . " \" onclick=\"msg('" . $row["Name"] . "','". $row["ID"]."')\" value=1> </td>";
+		echo "<td> <input type=\"checkbox\" id= \" " . $row["id"] . " \" onclick=\"msg('" . $row["Name"] . "','". $row["ID"]."','".$row["Price"]."')\" value=1> </td>";
 		echo "</tr>";
 	}
 	//echo "\nend for loop";
