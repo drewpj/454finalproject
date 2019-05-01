@@ -52,18 +52,40 @@
 		<tr class="header">
     			<th style="width:20%;">From</th>
     			<th style="width:20%;">To</th>
-			<th style="width:20%;">Price</th>
+			<th style="width:20%;">Time</th>
     			<th style="width:60%;">Description</th>
   		</tr>
 
 		<?php
-			for($i = 0; $i < 5; $i++){
-				$sql = "sql statement";
+			include_once 'include/db.php';
+		
+			$sql = "SELECT * from Transactions";
+	
+			$result = sqlsrv_query($conn, $sql);
+			
+			while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
 				echo "<tr>";
-				echo "<td> Drew </td>";
-				echo "<td> Andrew </td>";
-				echo "<td> $99 </td>";
-				echo "<td> services ;) </td>";
+				
+				//Buyer
+				$buyerID = $row['Buyer'];
+				$sql = "SELECT * from Users WHERE ID='" . $buyerID . "'";
+				$resultBuyer = sqlsrv_query($conn, $sql);
+				$rowBuyer = sqlsrv_fetch_array( $resultBuyer, SQLSRV_FETCH_ASSOC);
+				$buyerName = $rowBuyer["Name"];
+				
+				//Seller
+				$sellerID = $row['Seller'];
+				$sql = "SELECT * from Users WHERE ID='" . $sellerID . "'";
+				$resultSeller = sqlsrv_query($conn, $sql);
+				$rowSeller = sqlsrv_fetch_array( $resultSeller, SQLSRV_FETCH_ASSOC);
+				$sellerName = $rowSeller["Name"];
+				
+				
+				echo "<td>" . $sellerName . " </td>";
+				echo "<td> " . $buyerName . " </td>";
+				echo "<td> " . date('r', $row["Time"]) . " </td>";
+				echo "<td> " . $row["Items"] . " </td>";
+				
 				echo "</tr>";
 			}
 		?>
