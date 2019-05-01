@@ -1,7 +1,7 @@
 <?php
 	//necessary imports
 	//require 'processCard.php';
-	include_once 'include/db.php';
+	include_once '../include/db.php';
 	session_start();
 	$cart = $_SESSION['cart'];
 	$sum = 0;
