@@ -16,9 +16,9 @@
 		header("Location: /SellAgain.php");
 	}
 	else {
-		//$message = "Invalid input";
-		header("Location: /SellFail.php");
-		//echo("<script type='text/javascript'> alert('$message'); </script>");
+		$message = "Invalid input";
+		//header("Location: /SellFail.php");
+		echo("<script type='text/javascript'> alert('$message'); </script>");
 	}
 	
 ?>
