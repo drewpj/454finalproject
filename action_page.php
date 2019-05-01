@@ -12,8 +12,7 @@
 	if ($price > 0 && !empty($title)) {
 		$id = uniqid();	
 		$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author) 
-		VALUES ('". $title . "', '". $id ."', 0, $price, '". $brief ."', '". $category ."', '". $name ."',
-		'". $author ."');";
+		VALUES ('". $title . "', '". $id ."', 0, $price, '". $brief ."', '". $product ."', '". $name ."', '". $author ."');";
 		echo($sql);
 		$result = sqlsrv_query($conn, $sql); 
 		//header("Location: /SellAgain.php");
