@@ -66,7 +66,7 @@
  		         <option value="Any">Please Select An Option...</option>
  		         <option value="Tutor">Tutors</option>
  		         <option value="Book">Books</option>
- 		         <option value="Material">Study Materials</option>
+ 		         <option value="Study">Study Materials</option>
  		         <option value="Electronic">Electronics</option>
  		       </select>
  		     </div>
