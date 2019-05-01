@@ -7,7 +7,7 @@
 					$sql = "sql statement";
 				echo "<tr>";
 				echo "<td> " . $val['name'] . " </td>";
-				echo "<td> " . $val['inCart'] . " </td>";
+				echo "<td> " . $val['id'] . " </td>";
 				echo "<td> <button onclick=\"removeItemFromCart('" . $val['name'] . "')\">Remove</button> </td>";
 				echo "</tr>";
 				}
