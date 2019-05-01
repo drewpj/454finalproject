@@ -61,15 +61,6 @@
   		</tr>
 
 		<?php
-			for($i = 0; $i < 1; $i++){
-				$sql = "sql statement";
-				echo "<tr>";
-				echo "<td> Item Name </td>";
-				echo "<td> $99 </td>";
-				echo "<td> <button onclick=\"removeItemFromCart()\">Remove</button> </td>";
-				echo "</tr>";
-			}
-			
 			include 'php/CheckoutTable.php';
 		?>
 
