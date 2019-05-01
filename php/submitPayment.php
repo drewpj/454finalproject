@@ -11,10 +11,12 @@
 			$sum = $sum + $val['price'];
 			//get ID from itemID
 			$sql = "SELECT Seller from Item WHERE ID='" . $val['id'] . "'";
-			$sellerID = sqlsrv_query($conn, $sql); 
+			$result = sqlsrv_query($conn, $sql); 
+			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC)
+			$sellerID = $row["Seller"]
 			$buyerID = "Joe";
 			$time = time();
-			$sql = "INSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
+			$sql = "\nINSERT INTO Transaction (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
 			echo "\n\n" . $sql;
 		
 			//$result = sqlsrv_query($conn, $sql); 
