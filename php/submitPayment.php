@@ -8,6 +8,7 @@
 	foreach ($cart as $val){
 		if ($val['inCart'] == true){
 			$sum = $sum + $val['price'];
+		}
 	}
 	echo "The total is: " . $sum;
 	/*
