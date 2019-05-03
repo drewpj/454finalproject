@@ -2,7 +2,7 @@
 
 function msg(namex,idx,pricex){  
 
-	alert("before the ajaxcall 8:56");
+	//alert("before the ajaxcall 8:56");
 	$.ajax({
 		 //data: 'name=' + name, 'id=' + id,
 		 data: { name: namex, id: idx, price: pricex},//'name=' + name, 'id=' + id,
@@ -10,16 +10,16 @@ function msg(namex,idx,pricex){
     		method: 'POST', // or GET
     		success: function(msg) {
        			alert(msg);
-			alert("success");
+			//alert("success");
     		},
 		error: function(xhr,status,error) {
 			alert(status);
-			alert("error");
+			//alert("error");
 		}
 	});
 
 
-	alert("after the ajax call");
+	//alert("after the ajax call");
 }  
 
 
