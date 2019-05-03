@@ -25,6 +25,9 @@
 			//echo "\n\n" . $sql;
 		
 			$result = sqlsrv_query($conn, $sql2); 
+			
+			$sql = "UPDATE Item SET Quantity = Quantity - 1 WHERE id = '" . $val['id'] . "'";// and field > 0";
+			$result = sqlsrv_query($conn, $sql);
 		}
 	}
 	

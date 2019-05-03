@@ -79,8 +79,6 @@
 				$resultSeller = sqlsrv_query($conn, $sql);
 				$rowSeller = sqlsrv_fetch_array( $resultSeller, SQLSRV_FETCH_ASSOC);
 				$sellerName = $rowSeller["Name"];
-				echo $sql;
-				
 				
 				echo "<td>" . $sellerName . " </td>";
 				echo "<td> " . $buyerName . " </td>";
