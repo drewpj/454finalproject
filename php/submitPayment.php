@@ -26,6 +26,8 @@
 		}
 	}
 	
+	unset($_SESSION['cart']);
+	
 	
 	
 	
