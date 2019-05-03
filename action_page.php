@@ -15,7 +15,7 @@
 	$title = $_POST['title'];
 	$author = $_POST['author'];
 	$class = $_POST['class'];
-	$quantity = (int)$_POST['quantity']
+	$quantity = (int)$_POST['quantity'];
 
 	
 	
