@@ -1,7 +1,6 @@
 <?php
 	include_once '../include/db.php';
 	session_start();
-	echo "\nLogin Running";
 
 	
 	
@@ -11,10 +10,7 @@
 	//$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND PWDCOMPARE('" . $password . "', Password) = 1"; 
 	$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND Password='" . $password . "'"; 
 	$result = sqlsrv_query($conn, $sql);
-	
-		
-	echo "\nemail = " . $email . " password = " . $password . "\n";
-	echo "sql = " . $sql;
+
 	if (sqlsrv_has_rows($result)) {
 		echo("Logged in successfully!");
 		//Get row results
@@ -29,8 +25,8 @@
 		//Error message if wrong password.
 		$message = "Bad Login info!";
 		echo("<script type='text/javascript'> alert('$message'); </script>");
+		header("Location: ../login.html?login=failure");
 	}
 	
-	
-	echo "\nLogin ran";
+
 ?>
