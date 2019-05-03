@@ -10,13 +10,13 @@
 			$sum = $sum + $val['price'];
 
 			$sql = "SELECT * from Item WHERE ID='" . $val['id'] . "'";
-
+			echo $sql;
 			$result = sqlsrv_query($conn, $sql);
 		
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
 
 			$sellerID = $row["Seller"];
-
+			echo "    |      ".$sellerID."          |    ";
 			$buyerID = $_SESSION['ID'];
 			$time = time();
 			$sql = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
