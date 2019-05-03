@@ -10,13 +10,16 @@
 	echo ". ";
 	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2)){
 		echo("<script type='text/javascript'> alert('Please fill out all forms!'); </script>");
+		sleep(3);
 		header("Location: ../create-account.html?login=failure");
 	}elseif ($email != $email2){
 		echo("<script type='text/javascript'> alert('Your inputted emails don't match!'); </script>");
+		sleep(3);
 		header("Location: ../create-account.html?login=failure");
 		//do bad email stuff
 	}elseif ($password != $password2){
 		echo("<script type='text/javascript'> alert('Your inputted passwords don't match!'); </script>");
+		sleep(3);
 		header("Location: ../create-account.html?login=failure");
 		//do bad password stuff
 	} else {
