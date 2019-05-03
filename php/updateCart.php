@@ -20,6 +20,7 @@ if (isset($_SESSION['cart'][$name])){
 	$_SESSION['cart'][$name]['name'] = $name;
 	$_SESSION['cart'][$name]['id'] = $_POST['id'];
 	$_SESSION['cart'][$name]['price'] = $_POST['price'];
+	$_SESSION['cart'][$name]['seller'] = $_POST['seller'];
 }
 
 

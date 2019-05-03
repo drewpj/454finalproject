@@ -15,11 +15,11 @@
 		
 			$row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
 			echo "    |      row:".$row."          |    ";
-			$sellerID = $row["Seller"];
+			$sellerID = $row['Seller'];
 			echo "    |      seller:".$sellerID."          |    ";
 			$buyerID = $_SESSION['ID'];
 			$time = time();
-			$sql2 = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.");";
+			$sql2 = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
 			echo $sql2;
 			//echo "\n\n" . $sql;
 		
