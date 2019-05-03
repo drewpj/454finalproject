@@ -15,32 +15,33 @@
 	$title = $_POST['title'];
 	$author = $_POST['author'];
 	$class = $_POST['class'];
+	$quantity = (int)$_POST['quantity']
 
 	
 	
-	if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($author) && !empty($brief)) {
+	if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($author) && !empty($brief) && $quantity > 0) {
 			$id = uniqid();	
-			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
+			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class, Quantity) 
 			VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."',
-			'". $author ."', '". $class ."');";
+			'". $author ."', '". $class ."', ". $quantity .");";
 			//echo($sql);
 			$result = sqlsrv_query($conn, $sql); 
 			header("Location: /SellAgain.php");
 	}
-	else if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($class) && !empty($brief)) {
+	else if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($class) && !empty($brief) && $quantity > 0) {
 			$id = uniqid();	
-			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
+			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class, Quantity) 
 			VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."',
-			'". $author ."', '". $class ."');";
+			'". $author ."', '". $class ."', ". $quantity .");";
 			//echo($sql);
 			$result = sqlsrv_query($conn, $sql); 
 			header("Location: /SellAgain.php");
 	}
-	else if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($brief)) {
+	else if ($price > 0 && !empty($title) && !empty($product) && !empty($name) && !empty($brief) && $quantity > 0) {
 			$id = uniqid();	
-			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class) 
+			$sql = "INSERT INTO Item (Name, ID, Recurrence, Price, Description, Category, Seller, Author, Class, Quantity) 
 			VALUES ('". $title . "', '". $id ."', 0, ".$price.", '". $brief ."', '". $product ."', '". $name ."',
-			'". $author ."', '". $class ."');";
+			'". $author ."', '". $class ."', ". $quantity .");";
 			//echo($sql);
 			$result = sqlsrv_query($conn, $sql); 
 			header("Location: /SellAgain.php");

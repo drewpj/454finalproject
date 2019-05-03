@@ -111,6 +111,15 @@
  		       <textarea id="brief" name="brief" placeholder="Write a brief description to go on the initial product page.." style="height:100px"></textarea>
  		     </div>
 		    </div>
+			  
+		     <div class="row">
+		      <div class="col-25">
+		        <label for="quantity">Quantity</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="number" id="quantity" name="quantity" placeholder="Number selling..">
+		      </div>
+		    </div>
 
 		    <div class="row">
 		      <div class="col-25">
