@@ -66,7 +66,7 @@
 
 	</table>
 	    <?php
-			echo "Your total is: " . $_SESSION['total'];
+			echo "Your total is: $" . $_SESSION['total'];
 		?>
 		<div class="w-size25">
 <!-- Button -->
