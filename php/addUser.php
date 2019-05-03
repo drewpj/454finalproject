@@ -7,7 +7,7 @@
 	$email2 = $_POST['email2'];
 	$password = $_POST['password1'];
 	$password2 = $_POST['password2'];
-
+	echo ". ";
 	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2)){
 		echo("<script type='text/javascript'> alert('Please fill out all forms!'); </script>");
 		header("Location: ../create-account.html?login=failure");

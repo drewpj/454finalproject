@@ -7,7 +7,7 @@
 	//SQL statement to be queried. 
 	$sql = "SELECT Name, ID, Category FROM Users WHERE email='" . $email ."' AND Password='" . $password . "'"; 
 	$result = sqlsrv_query($conn, $sql);
-
+	echo ". ";
 	if (sqlsrv_has_rows($result)) {
 		echo("Logged in successfully!");
 		//Get row results
