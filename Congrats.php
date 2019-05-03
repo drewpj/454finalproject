@@ -66,11 +66,11 @@
 
 
 	</section>
-
-
-            <?php
+			<?php
 				include 'php/submitPayment.php';
 			?>
+
+            
 
 
 

@@ -20,6 +20,7 @@
 			$buyerID = $_SESSION['ID'];
 			$time = time();
 			$sql = "INSERT INTO Transactions (Items, Seller, Buyer, Time) VALUES ('".$val['name']."','".$sellerID."','".$buyerID."',".$time.")";
+			echo $sql;
 			//echo "\n\n" . $sql;
 		
 			$result = sqlsrv_query($conn, $sql); 
