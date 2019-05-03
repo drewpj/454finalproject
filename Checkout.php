@@ -39,7 +39,7 @@
   		
 		<a href="Sell.php">Sell</a>
 		<a href="Activity.php">Activity</a> 	
-		<a class="active" href="cart.php">Cart</a>
+		<a class="active" href="Checkout.php">Cart</a>
 		<a href="login.html">Log In</a>
 
 

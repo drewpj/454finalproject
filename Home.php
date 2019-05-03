@@ -49,7 +49,7 @@
 	  </div>
 
 	  <div class="column">
-      	    <a href="Books.php">Tutors</a>
+      	    <a href="Books.php">Books</a>
 	    <img src="book.jpg" alt="Books" style="width:100%">
 	  </div>
 	</div>
