@@ -29,7 +29,7 @@
 	}
 	
 	unset($_SESSION['cart']);
-	
+	header("Location: ../Congrats.html");
 	
 	
 	
