@@ -70,11 +70,16 @@
 		?>
 		<div class="w-size25">
 <!-- Button -->
-							
-			<a href="Congrats.html" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
-				Checkout!
-			</a>
-			
+			<?php		
+				if (!isset($_SESSION['ID'])){
+					echo "You are not signed in! Please sign in before buying an item.";
+					echo "<a href=\"login.html\" >Click here to log in!</a>";
+					return;
+				} else {
+					echo"<a href=\"Checkout.html\" class=\"flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4\">Checkout!</a>";	
+				}
+	
+			?>
 			
 		</div>
 
