@@ -9,12 +9,10 @@ function msg(namex,idx,pricex){
  		url: '../php/updateCart.php',
     		method: 'POST', // or GET
     		success: function(msg) {
-       			alert(msg);
-			//alert("success");
+
     		},
 		error: function(xhr,status,error) {
 			alert(status);
-			//alert("error");
 		}
 	});
 
