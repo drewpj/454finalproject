@@ -28,4 +28,5 @@
 		$result = sqlsrv_query($conn, $sql); 
 		header("Location: ../login.html?login=success");
 	}
+	echo " ";
 ?>
