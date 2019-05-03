@@ -8,16 +8,20 @@
 	$password = $_POST['password1'];
 	$password2 = $_POST['password2'];
 
-	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2))
+	if (empty($name) || empty($familyname) || empty($email) || empty($email2) || empty($password) || empty($password2)){
 		echo "invalid input";
+		header("Location: ../create-account.html?login=failure");
+	}
 	
 	if ($email != $email2){
 		echo "bad email";
+		header("Location: ../create-account.html?login=failure");
 		//do bad email stuff
 	}
 
 	if ($password != $password2){
 		echo "bad password";
+		header("Location: ../create-account.html?login=failure");
 		//do bad password stuff
 	}
 	
