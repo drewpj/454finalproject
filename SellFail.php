@@ -111,6 +111,15 @@
  		     </div>
 		    </div>
 
+		     <div class="row">
+		      <div class="col-25">
+		        <label for="quantity">Quantity</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="number" id="quantity" name="quantity" placeholder="Number selling..">
+		      </div>
+		    </div>
+			  
 		    <div class="row">
 		      <div class="col-25">
 		        <label for="author">Author</label>
