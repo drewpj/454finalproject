@@ -68,7 +68,9 @@
 	</section>
 
 
-
+            <?php
+				include 'php/submitPayment.php';
+			?>
 
 
 
