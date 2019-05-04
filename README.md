@@ -4,6 +4,13 @@ CIS454 Final Project
 UML documents are in the file titled UML Documents.pdf
 
 
+Group 17
+Nathalie Bailey
+Kai Bernstein 
+Davon Grant
+Drew Jacobson
+
+
 ## How to use
 To be able to buy ro sell items, you will need to create an account and login. After that, your items should show up in the buy and activity pages.
 
