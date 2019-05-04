@@ -2,6 +2,9 @@
 CIS454 Final Project
 
 
+## How to use
+To be able to buy ro sell items, you will need to create an account and login. After that, your items should show up in the buy and sell pages.
+
 
 ## How to run
 The website is live, and can be accessed at http://ec2-3-84-60-56.compute-1.amazonaws.com/Home.php or http://3.84.60.56/Home.php
