@@ -1,20 +1,16 @@
 function removeItemFromCart(name){  
 
-	//alert("removeItemFromCart");
-	$.ajax({
+	$.ajax({//simple ajax call
 		 data: 'name=' + name,
  		url: '../php/updateCart.php',
-    		method: 'POST', // or GET
+    		method: 'POST',
     		success: function(msg) {
-       			//alert(msg);
-			//alert("success");
     		},
 		error: function(xhr,status,error) {
 			alert(status);
-			//alert("error");
 		}
 	});
 	
-	location.reload();
+	location.reload();//reload the page
 	
 }
