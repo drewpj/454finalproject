@@ -3,7 +3,7 @@ CIS454 Final Project
 
 
 ## How to use
-To be able to buy ro sell items, you will need to create an account and login. After that, your items should show up in the buy and sell pages.
+To be able to buy ro sell items, you will need to create an account and login. After that, your items should show up in the buy and activity pages.
 
 
 ## How to run
