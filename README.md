@@ -5,9 +5,13 @@ UML documents are in the file titled UML Documents.pdf
 
 
 Group 17
+
 Nathalie Bailey
+
 Kai Bernstein 
+
 Davon Grant
+
 Drew Jacobson
 
 
