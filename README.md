@@ -1,6 +1,9 @@
 # 454finalproject
 CIS454 Final Project
 
+The full project repo is available here : https://github.com/drewpj/454finalproject
+
+
 UML documents are in the file titled UML Documents.pdf
 
 
